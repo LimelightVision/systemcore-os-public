@@ -1,1 +1,1 @@
-# systemcore-os-public
+Access to the latest SystemCore OS builds and cross-compilation resources
