@@ -1,0 +1,21 @@
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR aarch64)
+
+SET(CMAKE_C_COMPILER_WORKS 1)
+SET(CMAKE_CXX_COMPILER_WORKS 1)
+
+set(CROSSCOMP_NAME aarch64-buildroot-linux-gnu)
+set(HOST_DIR /opt/host)
+
+set(CMAKE_FIND_ROOT_PATH ${HOST_DIR}/${CROSSCOMP_NAME})
+set(CMAKE_SYSROOT ${HOST_DIR}/${CROSSCOMP_NAME}/sysroot)
+set(CMAKE_STAGING_PREFIX /home/test)
+
+set(CMAKE_C_COMPILER ${HOST_DIR}/bin/${CROSSCOMP_NAME}-gcc)
+set(CMAKE_CXX_COMPILER ${HOST_DIR}/bin/${CROSSCOMP_NAME}-g++)
+
+# Search for programs in host directories only
+SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+# Search for libraries and headers in the toolchain directories only
+SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
