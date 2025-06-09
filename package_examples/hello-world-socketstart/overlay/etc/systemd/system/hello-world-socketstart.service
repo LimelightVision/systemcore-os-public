@@ -1,0 +1,27 @@
+[Unit]
+Description=hello-world-socketstart service (Socket Activated)
+Requires=hello-world-socketstart.socket
+After=hello-world-socketstart.socket
+DefaultDependencies=no
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/local/bin/hello-world-socketstart/hello_world_socketstart.py
+
+Restart=no
+
+KillMode=mixed
+TimeoutStopSec=3
+
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log
+
+#don't enable this service unit
+[Install]
+#########

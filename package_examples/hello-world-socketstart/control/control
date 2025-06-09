@@ -1,0 +1,12 @@
+Package: hello-world-socketstart
+Version: 1.0.0
+Description: Socket-activated systemcore package
+Section: development
+Priority: optional
+Maintainer: Limelight Vision
+Architecture: all
+Source: local
+X-Port: 9002
+X-Has-UI: true
+X-Auto-Start: false
+X-Icon-Path: /usr/share/hello-world-socketstart.png
