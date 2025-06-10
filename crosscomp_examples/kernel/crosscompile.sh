@@ -12,7 +12,7 @@ export CROSS_COMPILE="/opt/systemcore-aarch64-toolchain/bin/aarch64-buildroot-li
 
 # Kernel build directory (with kbuild).
 #KDIR="/opt/systemcorelinux"
-KDIR="/home/brandon/buildroot/buildroot/output/build/linux-custom"
+KDIR="/opt/systemcorelinux"
 MODULE_DIR=$(pwd)
 TARGET="modules"
 

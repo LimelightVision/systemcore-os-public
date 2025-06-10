@@ -1,0 +1,22 @@
+version: '3.8'
+# runs as root inside container
+services:
+  crosscompile:
+    build:
+      context: .
+      args:
+        USER_ID: ${USER_ID:-1000}
+        GROUP_ID: ${GROUP_ID:-1000}
+    image: systemcore-crosscompile:latest
+    container_name: systemcore-builder
+    volumes:
+      - /opt/systemcore-aarch64-toolchain:/opt/systemcore-aarch64-toolchain:ro
+      - /opt/systemcorelinux:/opt/systemcorelinux:ro
+      - ./:/workspace
+    environment:
+      - ARCH=arm64
+      - CROSS_COMPILE=/opt/systemcore-aarch64-toolchain/bin/aarch64-buildroot-linux-gnu-
+      - KDIR=/opt/systemcorelinux
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
