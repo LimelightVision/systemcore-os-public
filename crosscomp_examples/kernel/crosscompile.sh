@@ -8,10 +8,11 @@ set -e
 export ARCH=arm64
 
 # Cross compiler prefix
-export CROSS_COMPILE="/opt/host/bin/aarch64-buildroot-linux-gnu-"
+export CROSS_COMPILE="/opt/systemcore-aarch64-toolchain/bin/aarch64-buildroot-linux-gnu-"
 
 # Kernel build directory (with kbuild).
-KDIR="/opt/systemcorelinux"
+#KDIR="/opt/systemcorelinux"
+KDIR="/home/brandon/buildroot/buildroot/output/build/linux-custom"
 MODULE_DIR=$(pwd)
 TARGET="modules"
 

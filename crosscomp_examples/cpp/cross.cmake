@@ -5,7 +5,7 @@ SET(CMAKE_C_COMPILER_WORKS 1)
 SET(CMAKE_CXX_COMPILER_WORKS 1)
 
 set(CROSSCOMP_NAME aarch64-buildroot-linux-gnu)
-set(HOST_DIR /opt/host)
+set(HOST_DIR /opt/systemcore-aarch64-toolchain)
 
 set(CMAKE_FIND_ROOT_PATH ${HOST_DIR}/${CROSSCOMP_NAME})
 set(CMAKE_SYSROOT ${HOST_DIR}/${CROSSCOMP_NAME}/sysroot)
