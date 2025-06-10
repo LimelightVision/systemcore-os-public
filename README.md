@@ -1,4 +1,13 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
+Release 139
+* Package Manager - drag-and-drop packages via home page & package manager tab
+* Add examples for auto-start and click-to-start (socket-activated) packages
+* Add c++ application and kernel module cross compilation examples
+* Strict Wifi SSID and Password Verification
+* Lock various advanced WiFi configuration options
+
+Release 134
+* Wifi Configuration improvements
 
 Release 133
 * Improve WiFi Configuration, especially 5GHZ configuration
