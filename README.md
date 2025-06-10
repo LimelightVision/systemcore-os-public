@@ -1,5 +1,7 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
+Release 140
+* CI test with latest cross compilation resources
 
 Release 139
 * Package Manager - drag-and-drop packages via home page & package manager tab
