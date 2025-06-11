@@ -1,5 +1,9 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
+Upcoming
+* Early A/B update infrastructure
+* Docker-based package support (enables ROS, custom environments, etc)
+
 Release 140
 * CI test with latest cross compilation resources
 
