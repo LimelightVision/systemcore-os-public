@@ -1,7 +1,7 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
 Release 146
-* SocketCan Timing Patche
+* SocketCan Timing Patch
 
 Release 145
 * Add docker for docker-based packages (enables ROS, custom environments, etc)
