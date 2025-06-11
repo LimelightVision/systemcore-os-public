@@ -1,8 +1,13 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
-Upcoming
-* Early A/B update infrastructure
-* Docker-based package support (enables ROS, custom environments, etc)
+Release 146
+* SocketCan Timing Patche
+
+Release 145
+* Add docker for docker-based packages (enables ROS, custom environments, etc)
+
+Release 144
+* New A/B Partition layout. Will need some adjusting to improve flashing speeds.
 
 Release 140
 * CI test with latest cross compilation resources
