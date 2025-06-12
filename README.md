@@ -1,5 +1,9 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
+
+Release 147
+* Add .mp4 package icon support
+
 Release 146
 * SocketCan Timing Patch
 
