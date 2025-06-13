@@ -1,4 +1,5 @@
-Access to the latest SystemCore OS builds and cross-compilation resources
+Access to the latest SystemCore OS builds and cross-compilation resources.
+Releases are automatically published and may not be fully tested
 
 Release 148
 * CAN txqueuelen increased to 1000 to handle larger bursts
