@@ -1,5 +1,9 @@
 Access to the latest SystemCore OS builds and cross-compilation resources
 
+Release 148
+* CAN txqueuelen increased to 1000 to handle larger bursts
+* CAN Buses reordered - starting from the left side of the device : can_s0, can_s1, can_s2, can_s3, can_s4
+* Previous ordering: can4, can3, can2, can1, can0
 
 Release 147
 * Add .mp4 package icon support
