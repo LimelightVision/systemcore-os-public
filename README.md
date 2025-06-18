@@ -1,9 +1,14 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may not be fully tested
 
+Release 151
+* Heartbeat module filters CAN interfaces by name before latching
+* UI System Tab cleanup
+* Far more verbose logs during package installation
+* Fix copy-to-clipboard button across UI
+
 Release 150
 * Update MRCComm
-* Heartbeat module filters CAN interfaces by name before latching
 * Heartbeat module handles new MRCComm spec
 * Heartbeat module exposes new read-only sysfs interfaces for matchdata, controldata
 
