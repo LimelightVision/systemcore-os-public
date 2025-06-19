@@ -1,11 +1,18 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may not be fully tested
 
-Release 151
+Release 155
+* Robot service waits for all can buses to be configured (15 sec timeout)
+
+Release 154
 * Heartbeat module filters CAN interfaces by name before latching
+* Expose entire control data value via sysfs attribute
 * UI System Tab cleanup
 * Far more verbose logs during package installation
 * Fix copy-to-clipboard button across UI
+* Add OS commit hash to the bottom of the settings tab
+* Fixed window titles for homepage and terminal window
+* Progress on OTA procedure
 
 Release 150
 * Update MRCComm
