@@ -1,6 +1,13 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may not be fully tested
 
+
+Release 157
+* Initial Alpha Release
+* Add USB automounting and hotplug support (/U, /V, etc)
+* Polish web interface
+* Remove hardcoded and prebaked packages.
+
 Release 155
 * Robot service waits for all can buses to be configured (15 sec timeout)
 
