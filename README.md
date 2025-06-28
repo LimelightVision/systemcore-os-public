@@ -1,7 +1,7 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
-## Alpha 2 (6/28/25) (Building)
+## Alpha 2 (6/28/25) (Release 159)
 
 ### OS
 * Default Wi-Fi configuration changed to 5Ghz with automatic channel selection. Likely increases boot time.
