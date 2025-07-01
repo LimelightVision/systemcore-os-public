@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  crosscompile:
+    build:
+      context: .
+      args:
+        USER_ID: ${USER_ID:-1000}
+        GROUP_ID: ${GROUP_ID:-1000}
+    image: systemcore-go-crosscompile:latest
+    container_name: systemcore-go-builder
+    volumes:
+      - /opt/systemcore-aarch64-toolchain:/opt/systemcore-aarch64-toolchain:ro
+      - ./:/workspace
+    environment:
+      - GOOS=linux
+      - GOARCH=arm64
+      - CGO_ENABLED=0
+      # - CGO_ENABLED=1
+      # - CC=/opt/systemcore-aarch64-toolchain/bin/aarch64-buildroot-linux-gnu-gcc
+      # - CXX=/opt/systemcore-aarch64-toolchain/bin/aarch64-buildroot-linux-gnu-g++
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
