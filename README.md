@@ -1,5 +1,27 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
+## Alpha 3 (7/1/25) (BUILDING, CHANGELOG IN PROGRESS)
+
+### OS
+* /etc/os-release updated
+* ...
+
+### Firmware
+* Restore battery voltage measurement accuracy
+* Reduce default display brightness
+* Add automatic display dimming and disablement after 10 seconds of no-motion
+* Add automatic display enablement after light motion such as a tap
+* Display can now properly display IP Addresses with 3 digits in all octets. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/74
+* ...
+
+### Web Interface
+* Add routes for most views
+* ...
+
+### Other
+* Remove go cache from toolchain
+* Add go compilation example to OS repo
+* ...
 
 ## Alpha 2 (6/28/25) (Release 159)
 
