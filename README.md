@@ -1,27 +1,29 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
-## Alpha 3 (7/1/25) (BUILDING, CHANGELOG IN PROGRESS)
+## Alpha 3 (7/1/25) (BUILDING)
 
 ### OS
-* /etc/os-release updated
-* ...
+* /usr/lib/os-release (and /etc/os-release) updated. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/85
+* Allow package overwriting. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/82
+* [WPILIB] Update date & time functionality. May address https://github.com/wpilibsuite/SystemCoreTesting/issues/81
+* Update CAN Hearbeat
 
 ### Firmware
-* Restore battery voltage measurement accuracy
+* Restore battery voltage measurement accuracy. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/75
 * Reduce default display brightness
 * Add automatic display dimming and disablement after 10 seconds of no-motion
 * Add automatic display enablement after light motion such as a tap
 * Display can now properly display IP Addresses with 3 digits in all octets. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/74
-* ...
+
 
 ### Web Interface
-* Add routes for most views
-* ...
+* Add routes for all web interface views. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/72
+* More obvious dropdown UI in System Tab. May address https://github.com/wpilibsuite/SystemCoreTesting/issues/65
 
 ### Other
-* Remove go cache from toolchain
+* Remove go cache and some miscellaneous files from toolchain. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/70
 * Add go compilation example to OS repo
-* ...
+
 
 ## Alpha 2 (6/28/25) (Release 159)
 
