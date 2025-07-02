@@ -1,6 +1,6 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
-## Alpha 3 (7/1/25) (Release 160)
+## Alpha 3 (7/1/25) (Release 161)
 
 ### OS
 * /usr/lib/os-release (and /etc/os-release) updated. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/85
