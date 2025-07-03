@@ -1,5 +1,10 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
+
+## Alpha 3 Hotfix (7/2/25) (Release 162)
+
+* Fix installation of packages larger than 50MB
+
 ## Alpha 3 (7/1/25) (Release 161)
 
 ### OS
