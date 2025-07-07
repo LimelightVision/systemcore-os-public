@@ -1,5 +1,14 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
+## Alpha 4 (IN PROGRESS)
+
+* Write journal logs to disk (max 10)
+* PWM Input: provide period (periodget)
+* PWM Output: per-pin settable period (periodset).
+* WS2812 support
+* Display period on web interface for pwm in/out IO pins.
+* Smoother screen dimming
+* Move ethernet irq to core1. Premature, yet arguably sensible optimziation
 
 ## Alpha 3 Hotfix (7/2/25) (Release 162)
 
