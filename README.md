@@ -34,7 +34,7 @@ Releases are automatically published and may contain bugs.
 * Add fault report warning. 
   * Gray - No active faults. Faults have occured since boot
   * Blinking red - Active faults
-  * Invisible - No active faults. Faults have never occured since boot
+  * Invisible - No active faults. Faults have not occured since boot
   > ![](https://ik.imagekit.io/llimi/controlsystem/alpha4/faultgray.png)
   > ![](https://ik.imagekit.io/llimi/controlsystem/alpha4/faultred.png)
 
