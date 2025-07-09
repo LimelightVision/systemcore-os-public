@@ -1,14 +1,42 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
-## Alpha 4 (IN PROGRESS)
+## Alpha 4 (BUILDING)
 
-* Write journal logs to disk (max 10)
-* PWM Input: provide period (periodget)
-* PWM Output: per-pin settable period (periodset).
-* WS2812 support
-* Display period on web interface for pwm in/out IO pins.
-* Smoother screen dimming
-* Move ethernet irq to core1. Premature, yet arguably sensible optimziation
+### OS
+* Write journal logs to disk (max 10). Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/88
+* Remove /etc/timezone. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/102
+* Disable green ethernet support and move ethernet irq to core 1. May address https://github.com/wpilibsuite/SystemCoreTesting/issues/94
+* [WPILIB] Fix DS release display. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/93
+* Add /sys/vbrownout and /sys/vrecovery (millivolts). Brownout behaviour currently zeros digital outputs and sets pwm outputs to servo neutral 1500us
+* Add /io/leds bytearray for LED control. Max size 1024x3, 3 bytes per pixel, RGB
+* Add "ledcount" to each io pin subtable. Max 1024 per pin, max 1024 aggregate.
+* Fault report publishing for brownouts, IO/I2C, USB, RSL, Display, and IMU.:
+  > /sys/faults table contains active fault flags, and /sys/faultcounts contains historical fault counts.
+  > ![](https://ik.imagekit.io/llimi/controlsystem/alpha4/faultmetrics.png)
+* Get duty cycle sensor period (periodget) (microseconds)
+* Set pwm output period (periodset) (enumeration)
+
+### Firmware
+* PWM Input: provide period
+* PWM Output: On-the-fly period adjustment. Better funcitonality overall
+> Video: https://vimeo.com/1099708743?from=outro-local
+* Brownout and recovery functionality. Defaults to 6750 mV brownout and 7500mV recovery
+* WS2812 support on all IO pins. Up to 1024 LEDs total and per-pin
+> ![](https://private-user-images.githubusercontent.com/13728935/464344632-2bd4787e-8683-42cc-9a8d-76b030a9d727.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTIwODgyMzMsIm5iZiI6MTc1MjA4NzkzMywicGF0aCI6Ii8xMzcyODkzNS80NjQzNDQ2MzItMmJkNDc4N2UtODY4My00MmNjLTlhOGQtNzZiMDMwYTlkNzI3LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNzA5VDE5MDUzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwYjM2MDgxNzU1MjdkNDE4NWFhYjRlYzg5NTg3YWMzNzQ5NjcxOTQ5N2IwMDEyOTRjMzVkNDJjZmY0NzhkNTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.oRtInNYeaahlpJUvNVxwxJ2PICPkdrZ8ygGycCIqm10)
+* Smoother screen dim and wake-up sequences
+* More sensitive tap-to-wake functionality
+
+### Web Interface 
+* Display period on web interface for each pwm in/out IO pin.
+* Confirm webgl availability before displaying 3D models, handle all 3D-related exceptions. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/101
+* Significantly reduce CPU usage of most web interface pages. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/41
+* Add fault report warning. 
+  * Gray - No active faults. Faults have occured since boot
+  * Blinking red - Active faults
+  * Invisible - No active faults. Faults have never occured since boot
+  > ![](https://ik.imagekit.io/llimi/controlsystem/alpha4/faultgray.png)
+  > ![](https://ik.imagekit.io/llimi/controlsystem/alpha4/faultred.png)
+
 
 ## Alpha 3 Hotfix (7/2/25) (Release 162)
 
@@ -28,7 +56,6 @@ Releases are automatically published and may contain bugs.
 * Add automatic display dimming and disablement after 10 seconds of no-motion
 * Add automatic display enablement after light motion such as a tap
 * Display can now properly display IP Addresses with 3 digits in all octets. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/74
-
 
 ### Web Interface
 * Add routes for all web interface views. Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/72
