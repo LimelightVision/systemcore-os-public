@@ -1,6 +1,6 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
-## Alpha 4 (BUILDING)
+## Alpha 4 (Release 163)
 
 ### OS
 * Write journal logs to disk (max 10). Addresses https://github.com/wpilibsuite/SystemCoreTesting/issues/88
