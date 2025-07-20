@@ -1,5 +1,27 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
+
+
+## Alpha 5 (IN PROGRESS)
+
+### OS
+* New LED API supporting ledcount and ledoffset for increased flexibility.
+* Fix Journal Logs clearing due to timezone changes as a result of DS connectivity
+* Increase accuracy of can bus load calculation
+* Add CAN Bus faults to faults view
+* Fix WiFi disablement
+
+### Web Interface
+* Add new system log viewer. View, filter, and download complete system logs from the web interface. Inspired by volunteer and team experiences at IRI.
+* Add "No Faults" green checkmark to web UI header
+* Styling updates
+* Further reduce CPU utilization of Hardware Snapshot page
+* Add Initial CAN Bus configuration UI (2.0 1mbps, FD without BRS 1mbps,1mbps, FD 1mbps, 5mbps). 
+
+### Firmware
+* Increase theoretical max LED count to 6144 (1024 unique). May be limited in a future release
+* Allow digital output control while disabled
+
 ## Alpha 4 (Release 163)
 
 ### OS
