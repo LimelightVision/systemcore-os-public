@@ -22,7 +22,7 @@ Releases are automatically published and may contain bugs.
 
 ### Firmware
 * Increase theoretical max LED count to 6144 (1024 unique). May be limited in a future release
-* Allow digital output control while disabled
+* Allow digital output control while disabled https://github.com/wpilibsuite/SystemCoreTesting/issues/116
 
 ## Alpha 4 (Release 163)
 
