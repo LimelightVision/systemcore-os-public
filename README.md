@@ -9,7 +9,7 @@ Releases are automatically published and may contain bugs.
 * Increase accuracy of can bus load calculation
 * Add CAN Bus faults to faults viewer
 * Fix WiFi disablement https://github.com/wpilibsuite/SystemCoreTesting/issues/112 https://github.com/wpilibsuite/SystemCoreTesting/issues/107
-* Fix ssh login password expiry
+* Fix ssh login password expiry https://github.com/wpilibsuite/SystemCoreTesting/issues/90
 * dhcpcd ignores all can interfaces https://github.com/wpilibsuite/SystemCoreTesting/issues/113
 * New LED API supporting ledcount and ledoffset for increased flexibility. (requires WPILIB Alpha 2) https://github.com/wpilibsuite/SystemCoreTesting/issues/104
 
