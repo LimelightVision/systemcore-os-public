@@ -2,21 +2,23 @@ Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
 
-## Alpha 5 (IN PROGRESS)
+## Alpha 5 (Release 166)
 
 ### OS
-* New LED API supporting ledcount and ledoffset for increased flexibility.
-* Fix Journal Logs clearing due to timezone changes as a result of DS connectivity
+* Fix Journal Log errors due to timezone changes as a result of DS connectivity
 * Increase accuracy of can bus load calculation
-* Add CAN Bus faults to faults view
-* Fix WiFi disablement
+* Add CAN Bus faults to faults viewer
+* Fix WiFi disablement https://github.com/wpilibsuite/SystemCoreTesting/issues/112 https://github.com/wpilibsuite/SystemCoreTesting/issues/107
+* Fix ssh login password expiry
+* dhcpcd ignores all can interfaces https://github.com/wpilibsuite/SystemCoreTesting/issues/113
+* New LED API supporting ledcount and ledoffset for increased flexibility. (requires WPILIB Alpha 2) https://github.com/wpilibsuite/SystemCoreTesting/issues/104
 
 ### Web Interface
-* Add new system log viewer. View, filter, and download complete system logs from the web interface. Inspired by volunteer and team experiences at IRI.
+* Add new system log viewer. View, filter, and download complete system logs from the web interface. Inspired by volunteer and team experiences at IRI. https://github.com/wpilibsuite/SystemCoreTesting/issues/88
 * Add "No Faults" green checkmark to web UI header
 * Styling updates
-* Further reduce CPU utilization of Hardware Snapshot page
-* Add Initial CAN Bus configuration UI (2.0 1mbps, FD without BRS 1mbps,1mbps, FD 1mbps, 5mbps). 
+* Further reduce CPU utilization of Hardware Snapshot page https://github.com/wpilibsuite/SystemCoreTesting/issues/41
+* Simplify interface configuration. Users can disable/enable Wlan0, but other controls have been disabled.
 
 ### Firmware
 * Increase theoretical max LED count to 6144 (1024 unique). May be limited in a future release
