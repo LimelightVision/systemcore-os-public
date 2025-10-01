@@ -2,6 +2,9 @@ Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
 
+## Release 167 changes the glibc requirement to allow for module and application cross-compliation on older linux systems. Teams should continue to use Alpha 5 / Release 167
+
+
 ## Alpha 5 (Release 166)
 
 ### OS
