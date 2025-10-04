@@ -1,11 +1,16 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
+## Release 168 (Undergoing Testing)
+
+* Addresses runaway control inputs during disconnections
+* Addresses systemcore user permissions issues
+
 
 ## Release 167 (Unstable)
 
 * Changes the glibc requirement to allow for module and application cross-compliation on older linux systems. Teams should continue to use Alpha 5 / Release 166
-
+* Robot service runs as systemcore user
 
 ## Alpha 5 (Release 166)
 
