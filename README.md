@@ -1,11 +1,12 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
-## Release 168 (Undergoing Testing)
+## Alpha 7 (Relase 169)
 
 * Addresses runaway control inputs during disconnections
-* Addresses systemcore user permissions issues
-
+* Addresses systemcore user permissions issues (I2C, USB Serial, USB Devices) https://github.com/wpilibsuite/SystemCoreTesting/issues/174 https://github.com/wpilibsuite/SystemCoreTesting/issues/173
+* Robot program terminated with SIGKILL after one second timeout post SIGTERM https://github.com/wpilibsuite/SystemCoreTesting/issues/168
+* Release 168->169: Bump image name to limelightosr-alpha-7
 
 ## Release 167 (Unstable)
 
