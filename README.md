@@ -12,7 +12,6 @@ Releases are automatically published and may contain bugs.
 
 * Changes the glibc requirement to allow for module and application cross-compliation on older linux systems. Teams should continue to use Alpha 5 / Release 166
 * Robot service runs as systemcore user
-* Add expansionhub and radio scservice daemons
 
 ## Alpha 5 (Release 166)
 
