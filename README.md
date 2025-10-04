@@ -10,7 +10,7 @@ Releases are automatically published and may contain bugs.
 
 ## Release 167 (Unstable)
 
-* Changes the glibc requirement to allow for module and application cross-compliation on older linux systems. Teams should continue to use Alpha 5 / Release 166
+* Changes the glibc requirement from 2.38 to 2.35 to allow for module and application cross-compliation on older linux systems. Teams should continue to use Alpha 5 / Release 166
 * Robot service runs as systemcore user
 
 ## Alpha 5 (Release 166)
