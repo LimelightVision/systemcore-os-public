@@ -1,6 +1,31 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
+## Alpha 8 (Building)
+
+### OS
+* Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior
+* Rewritten USB automount script. Directories are created and removed alongside USB Drives, all delays have been removed, and lowercase symlinks have been added to match the roboRIO. The new beta hardware is required for solid USB 3 drive mounts.
+* Add user-space CAN Bus watchdog service to handle bus-down states (disable kernel auto-restart functionality).
+* USB IP Addresses changed to not conflict with existing ecosystem devices. 172.26 and 172.27 subnets for Systemcore on Windows and Mac/Linux respectively.
+* Potentially faster WiFi channel selection.
+* Add timesyncd for monotonic system logging
+* Robot service waits for robot executable
+* Add OSS licensing info to releases
+
+### Firmware
+* Auto detect different hardware variants
+* Support for new beta hardware IO, IMU, Faults, etc
+* Add hardware version to bottom right corner of screen
+* Add third spinner to represent host connectivity
+* Auto restart if USB connectivity is not established quickly after boot. Improvement over previous RP2350 watchdog behavior which required an initial connection.
+* Never dim the screen if there are IMU faults
+* RSL Faults do not trigger the red status light. The new hardware treats an unplugged RSL as a 'fault' and FTC does not currently require an RSL 
+
+### Web Interface
+* RSL Faults do not trigger the blinking red fault indicator. They are subdued within the faults dropdown.
+* Remove UNII2 Channels from Wifi 5ghz channel selection
+
 ## Alpha 7 (Relase 169)
 
 * Addresses runaway control inputs during disconnections https://github.com/wpilibsuite/SystemCoreTesting/issues/176
