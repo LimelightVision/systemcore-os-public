@@ -15,7 +15,7 @@ Releases are automatically published and may contain bugs.
 
 ### Firmware
 * Auto detect different hardware variants
-* Support for new beta hardware IO, IMU, Faults, etc
+* Support for new beta hardware
 * Add hardware version to bottom right corner of screen
 * Add third spinner to represent usb connectivity to host
 * Auto restart if USB connectivity is not established quickly after boot. Improvement over previous RP2350 watchdog behavior which required an initial connection.
