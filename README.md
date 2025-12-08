@@ -7,22 +7,22 @@ Releases are automatically published and may contain bugs.
 ## Alpha 8 & Beta 8 (Building)
 
 ### OS
-* Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior
+* Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior. (https://github.com/wpilibsuite/SystemcoreTesting/issues/185)
 * Rewritten USB automount script. Directories are created and removed alongside USB Drives, all delays have been removed, and lowercase symlinks have been added to match the roboRIO. The new beta hardware is required for solid USB 3 drive mounts.
-* Add user-space CAN Bus watchdog service to handle bus-down states (disable kernel auto-restart functionality).
+* Add user-space CAN Bus watchdog service to handle bus-down states (disable kernel auto-restart functionality). (https://github.com/wpilibsuite/SystemcoreTesting/issues/163)
 * USB IP Addresses & DHCP Servers changed to avoid conflict with existing devices. 172.26 and 172.27 subnets for Systemcore on Windows and Mac/Linux respectively.
 * Potentially faster WiFi channel selection (tbd)
-* Add timesyncd for monotonic system logging
-* Robot service waits for robot executable
-* Add OSS licensing info to releases
+* Add timesyncd for monotonic system logging (https://github.com/wpilibsuite/SystemcoreTesting/discussions/203)
+* Robot service waits for robot executable instead of crash-looping (https://github.com/wpilibsuite/SystemcoreTesting/issues/153)
+* Add OSS licensing info to releases (https://github.com/wpilibsuite/SystemcoreTesting/issues/188)
 
 ### Firmware
 * Auto detect different hardware variants
 * Support for new beta hardware
 * Add hardware version to bottom right corner of screen
 * Add third spinner to represent usb connectivity to host
-* Auto restart if USB connectivity is not established quickly after boot. Improvement over previous RP2350 watchdog behavior which required an initial connection.
-* Never dim the screen if there are IMU faults
+* Auto restart if USB connectivity is not established quickly after boot. Improvement over previous RP2350 watchdog behavior which required an initial connection. (https://github.com/wpilibsuite/SystemcoreTesting/issues/185)
+* Never dim the screen if there are IMU faults (https://github.com/wpilibsuite/SystemcoreTesting/issues/172)
 * RSL Faults do not trigger the red status light. The new hardware treats an unplugged RSL as a 'fault' and FTC does not currently require an RSL 
 
 ### Web Interface
