@@ -1,6 +1,9 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
+* Beta builds are for newer Beta Hardware. Beta Hardware has a configuration button.
+* Alpha builds are for the original Alpha Hardware.
+
 ## Alpha 8 & Beta 8 (Building)
 
 ### OS
