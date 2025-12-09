@@ -8,7 +8,7 @@ Releases are automatically published and may contain bugs.
 
 ### OS
 * Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior. (https://github.com/wpilibsuite/SystemcoreTesting/issues/185)
-* Rewritten USB automount script. Directories are created and removed alongside USB Drives, all delays have been removed, and lowercase symlinks have been added to match the roboRIO. The new beta hardware is required for solid USB 3 drive mounts.
+* Rewritten USB automount script. Directories are created and removed alongside USB Drives, all delays have been removed, and lowercase symlinks have been added to match the roboRIO. The new beta hardware is required for solid USB 3 drive mounts. (https://github.com/wpilibsuite/SystemcoreTesting/issues/155)
 * Add user-space CAN Bus watchdog service to handle bus-down states (disable kernel auto-restart functionality). (https://github.com/wpilibsuite/SystemcoreTesting/issues/163)
 * USB IP Addresses & DHCP Servers changed to avoid conflict with existing devices. 172.26 and 172.27 subnets for Systemcore on Windows and Mac/Linux respectively.
 * Potentially faster WiFi channel selection (tbd)
