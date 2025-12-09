@@ -4,7 +4,7 @@ Releases are automatically published and may contain bugs.
 * Beta builds are for newer Beta Hardware. Beta Hardware has a configuration button.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 8 & Beta 8 (Building)
+## Alpha 8 & Beta 8 (BETA RELEASE 7 FOR NEW BETA HARDWARE, ALPHA RELEASE 177 FOR ORIGINAL ALPHA HARDWARE)
 
 ### OS
 * Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior. (https://github.com/wpilibsuite/SystemcoreTesting/issues/185)
