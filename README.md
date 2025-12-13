@@ -6,6 +6,11 @@ Releases are automatically published and may contain bugs.
 
 ## Alpha 8 & Beta 8 (BETA RELEASE 7 FOR NEW BETA HARDWARE, ALPHA RELEASE 177 FOR ORIGINAL ALPHA HARDWARE)
 
+OS FOR ALPHA HARDWARE: https://github.com/LimelightVision/systemcore-os-public/releases/tag/Limelight_SYSTEMCORE-177
+
+OS FOR BETA HARDWARE: https://github.com/LimelightVision/systemcore-os-public/releases/tag/Limelight_SYSTEMCOREBETA-7
+
+
 ### OS
 * Picoflasher runs in a loop and ignores non-internal RP2350s. Works alongside new RP2350 watchdog reset behavior. (https://github.com/wpilibsuite/SystemcoreTesting/issues/185)
 * Rewritten USB automount script. Directories are created and removed alongside USB Drives, all delays have been removed, and lowercase symlinks have been added to match the roboRIO. The new beta hardware is required for solid USB 3 drive mounts. (https://github.com/wpilibsuite/SystemcoreTesting/issues/155)
