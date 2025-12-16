@@ -4,6 +4,25 @@ Releases are automatically published and may contain bugs.
 * Beta builds are for newer Beta Hardware. Beta Hardware has a configuration button.
 * Alpha builds are for the original Alpha Hardware.
 
+## Alpha 9 & Beta 9 (BUILDING)
+
+### OS
+* Improved RT Subsystem watchdog reset handling
+* Add canbusloadmon, canbussniffer
+* License text included with public releases
+* Automatically apply new wlan0 and eth0 configurations
+
+### Firmware
+* PWM outputs will never enable unless robot is enabled and not browning out.
+* PWM outputs will send 1500 for 60ms (interruptible) and then turn off after brownout, robot disable, or broken host USB connection (100ms)
+
+### Web Interface
+* Add Can Bus Load Monitor. Can bus load metrics are far more accurate
+* Add Can Bus Monitor. Upload DBC or REV JSON decoder spec files to decode can frames in real-time
+ * Group by device in "FIRST" Mode
+ * See decoded signals in frame detail pane.
+   
+
 ## Alpha 8 & Beta 8 (BETA RELEASE 7 FOR NEW BETA HARDWARE, ALPHA RELEASE 177 FOR ORIGINAL ALPHA HARDWARE)
 
 OS FOR ALPHA HARDWARE: https://github.com/LimelightVision/systemcore-os-public/releases/tag/Limelight_SYSTEMCORE-177
