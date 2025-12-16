@@ -14,7 +14,7 @@ Releases are automatically published and may contain bugs.
 
 ### Firmware
 * PWM outputs will never enable unless robot is enabled and not browning out.
-* PWM outputs will send 1500 for 60ms (interruptible) and then turn off after brownout, robot disable, or broken host USB connection (100ms)
+* PWM outputs set to 1500us for 60ms (interruptible) and then turn off after brownout, robot disable, or broken host USB connection (100ms)
 
 ### Web Interface
 * Add Can Bus Load Monitor. Can bus load metrics are far more accurate
