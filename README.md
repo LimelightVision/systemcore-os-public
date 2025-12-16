@@ -8,16 +8,16 @@ Releases are automatically published and may contain bugs.
 ### OS
 * Improved RT Subsystem watchdog reset handling
 * Add canbusloadmon, canbussniffer
-* License text included with public releases
-* Automatically apply new wlan0 and eth0 configurations
+* License text included with public releases (https://github.com/wpilibsuite/SystemcoreTesting/issues/188)
+* Automatically apply new wlan0 and eth0 configurations (https://github.com/wpilibsuite/SystemcoreTesting/issues/79) (https://github.com/wpilibsuite/SystemcoreTesting/issues/182)
 
 ### Firmware
 * PWM outputs will never enable unless robot is enabled and not browning out.
 * PWM outputs set to 1500us for 60ms (interruptible) and then turn off after brownout, robot disable, or broken host USB connection (100ms)
 
 ### Web Interface
-* Add Can Bus Load Monitor. Can bus load metrics are far more accurate
-* Add Can Bus Monitor. Upload DBC or REV JSON decoder spec files to decode can frames in real-time
+* Can bus load metrics are far more accurate (https://github.com/wpilibsuite/SystemcoreTesting/issues/73)
+* Add Can Bus Monitor. Upload DBC or REV JSON decoder spec files to decode can frames in real-time  (https://github.com/wpilibsuite/SystemcoreTesting/issues/131)
  * Group by device in "FIRST" Mode
  * See decoded signals in frame detail pane.
  * Video: https://vimeo.com/1146967580?share=copy&fl=sv&fe=ci
