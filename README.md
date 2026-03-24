@@ -4,6 +4,42 @@ Releases are automatically published and may contain bugs.
 * Beta builds are for newer Beta Hardware. Beta Hardware has a configuration button.
 * Alpha builds are for the original Alpha Hardware.
 
+## Alpha 10 and Beta 10 (Pre-release, Undergoing testing)
+
+### OS
+
+* Linux 6.6.45 with preemption patches → 6.12.77 with built-in preemption
+* 4k page size → 16K page size
+* Java 21 → Java 25 (adoptium)
+* GCC12 → GCC14
+* Python 3.12 → Python 3.13.12
+* Gradle 9.4.1
+* ![gradle](https://ik.imagekit.io/llimi/controlsystem/gradle941.png)
+* TensorFlow 2.5 → 2.16.1
+* Flatbuffers 2 → 23
+* Update WiFi driver binaries
+* Enable kernel module compression
+* Removed EEE patches (mainlined)
+* Add 2GB storage to each user partition, reduce out-of-the-box storage utilization
+* 2.4Ghz WiFi is locked to 20mhz channel widths to minimize interference in congested environments.
+
+### Web Interface
+
+* Packages with ``X-Https`` enabled in their control files will force the Systemcore UI to present https URLs.
+* Packages with ``X-Services`` populated with a comma-delimited list of services will present with restart and stop buttons that reset and stop the listed services
+* Check packagemanager health before allowing package installation. Users are warned to check power/connectivity to Systemcore if health check fails. Addresses UX issue where user attempts package install on a cached web interface without Systemcore connectivity
+* Add Live package install logs
+* Add initial "Wireless" view to the System Tab to present diagnostic info pertaining to WiFi and Bluetooth
+* ![wireless](https://ik.imagekit.io/llimi/controlsystem/wirelessview.png)
+
+* Add RT priority, CPU affinity, nice values, RT scheduler policy to each process in the Process View
+* ![rt](https://ik.imagekit.io/llimi/controlsystem/rtprio0.png)
+* ![rt1](https://ik.imagekit.io/llimi/controlsystem/rtprio1.png)
+
+
+* Fix some rev canbus spec values parsing with incorrect endian-ness
+
+
 ## [Alpha 9](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-9-182) & [Beta 9](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-9-12)
 ### OS
 * Improved RT Subsystem watchdog reset handling
