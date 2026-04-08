@@ -13,8 +13,6 @@ Releases are automatically published and may contain bugs.
 * Java 21 → Java 25 (adoptium)
 * GCC12 → GCC14
 * Python 3.12 → Python 3.13.12
-* Gradle 9.4.1
-* ![gradle](https://ik.imagekit.io/llimi/controlsystem/gradle941.png)
 * TensorFlow 2.5 → 2.16.1
 * Flatbuffers 2 → 23
 * Update WiFi driver binaries
@@ -22,6 +20,8 @@ Releases are automatically published and may contain bugs.
 * Removed EEE patches (mainlined)
 * Add 2GB storage to each user partition, reduce out-of-the-box storage utilization
 * 2.4Ghz WiFi is locked to 20mhz channel widths to minimize interference in congested environments.
+* Systemcore USB-Ethernet IP Addresses have changed: 172.26.0.1 for Windows users, 172.27.0.1 for Linux and MacOS users.
+* New partition layout
 
 ### Web Interface
 
