@@ -6,6 +6,8 @@ Releases are automatically published and may contain bugs.
 
 ## Alpha 10 and Beta 10 (Pre-release, Undergoing testing)
 
+## ALPHA 10 AND BETA 10 MUST BE FLASHED WITH HARDWARE MANAGER 2.0.7 (See SystemcoreTesting Repo)
+
 ### OS
 
 * Linux 6.6.45 with preemption patches → 6.12.77 with built-in preemption
