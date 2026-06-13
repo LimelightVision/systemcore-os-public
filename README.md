@@ -1,4 +1,4 @@
-Access to the latest SystemCore OS builds and cross-compilation resources.
+Access to the latest Systemcore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
 NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting Repo)
