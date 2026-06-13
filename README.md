@@ -28,13 +28,22 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 
 
 ### Web Interface
-- Channel Width selector presents explicit 20 / 40 / 80 MHz options and is positioned above channel selection.
-- Channels that cannot anchor the selected width are grayed out and labeled incompatible. Widening the channel auto-snaps an incompatible manual channel back to Auto.
-- "Channel" is relabeled "Primary Channel" at 40/80 MHz, with a tooltip explaining that wider channels select the primary 20 MHz sub-channel within a fixed block.
-- Editor displays the channel block, center frequency, primary channel, HT40 mode, and secondary channel for the current selection.
-- Wireless view (System Tab) now shows the active channel block, HT40, etc.
-- Wireless view notes when radio relocates the primary channel within block during coexistence scan
+* Channel Width selector presents explicit 20 / 40 / 80 MHz options and is positioned above channel selection.
+* Channels that cannot anchor the selected width are grayed out and labeled incompatible. Widening the channel auto-snaps an incompatible manual channel back to Auto.
+* "Channel" is relabeled "Primary Channel" at 40/80 MHz, with a tooltip explaining that wider channels select the primary 20 MHz sub-channel within a fixed block.
+* Editor displays the channel block, center frequency, primary channel, HT40 mode, and secondary channel for the current selection.
+* Wireless view (System Tab) now shows the active channel block, HT40, etc.
+* Wireless view notes when radio relocates the primary channel within block during coexistence scan
 
+![selector](https://ik.imagekit.io/llimi/controlsystem/wifiselector_11.png)
+
+* 20MHz:
+  * ![20](https://ik.imagekit.io/llimi/controlsystem/wifi20mhz_11.png)
+* 40MHz:
+  * ![40](https://ik.imagekit.io/llimi/controlsystem/wifi40mhz_11_swap.png)
+* 80MHz:
+  * ![80](https://ik.imagekit.io/llimi/controlsystem/wifi80mhz_11_swap.png)
+  * ![80noswap](https://ik.imagekit.io/llimi/controlsystem/wifi80mhz_11_noswap.png)
 
 ## [Alpha 10 and Beta 10](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-release-10)
 
