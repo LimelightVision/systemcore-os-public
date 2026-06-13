@@ -20,11 +20,11 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 * Correct HT40 (40 MHz) and VHT80 (80 MHz) operation, including the proper secondary-channel offset (HT40+/−) and 80 MHz center-frequency.
 * Validated 20/40/80 MHz operation end-to-end on beta hardware; 80 MHz negotiates real VHT80 client rates (>=390 Mbit/s).
 * Boot Time Improvements
- * Shave 9 seconds off WiFi AP automatic channel selection
- * Shave additional 9-10 seconds off AP initialization in both automatic channel and static channel configurations
- * Shave 3.5 seconds off general system readiness time (canbus, systemd)
- * Boot->AP readiness with automatic channel selection time reduced by ~19 seconds
- * Boot->AP readiness with static channel selection reduced by 9-10 seconds
+  * Shave 9 seconds off WiFi AP automatic channel selection
+  * Shave additional 9-10 seconds off AP initialization in both automatic channel and static channel configurations
+  * Shave 3.5 seconds off general system readiness time (canbus, systemd)
+  * Boot->AP readiness with automatic channel selection time reduced by ~19 seconds
+  * Boot->AP readiness with static channel selection reduced by 9-10 seconds
 
 
 ### Web Interface
