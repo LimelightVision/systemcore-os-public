@@ -10,8 +10,8 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 
 ### OS
 
-* OS Flash time reduced from over 6 minutes to around 1.5 minutes on windows
-* Unzipped image size reduced from 14.5GB to 3.5GB
+* OS Flash time reduced: 6 minutes -> 1.5 minutes on windows
+* Unzipped image size reduced: 14.5GB -> 3.5GB
 * rootfs partitions expand on first boot
 * Add venv support and pip support to system python
 * Add common python package dependencies (gunicorn, flask-sqlalchemy, requests)
