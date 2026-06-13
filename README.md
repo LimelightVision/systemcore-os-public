@@ -1,12 +1,25 @@
 Access to the latest SystemCore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
-* Beta builds are for newer Beta Hardware. Beta Hardware has a configuration button.
+NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting Repo)
+
+* Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 10 and Beta 10 (Pre-release, Undergoing testing)
+## Alpha 11 and Beta 11 (In progress)
 
-## ALPHA 10 AND BETA 10 MUST BE FLASHED WITH HARDWARE MANAGER 2.0.7 (See SystemcoreTesting Repo)
+### OS
+
+* OS Flash time reduced from over 6 minutes to around 1.5 minutes on windows
+* Unzipped image size reduced from 14.5GB to 3.5GB
+* rootfs partitions expand on first boot
+* Add venv support and pip support to system python
+* Add common python package dependencies (gunicorn, flask-sqlalchemy, requests)
+* Update system wpilib, scservices, and mrccomm to latest
+* 
+
+
+## [Alpha 10 and Beta 10](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-release-10)
 
 ### OS
 
