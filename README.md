@@ -10,15 +10,17 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 
 ### OS
 
-* OS Flash time reduced: 6 minutes -> 1.5 minutes on windows
-* Unzipped image size reduced: 14.5GB -> 3.5GB
+* OS Flash time reduced: 6 minutes -> ~46-48 seconds on windows
+* Unzipped image size reduced: 14.5GB -> 1.8GB
+* Image download size reduced: 1.05GB -> ~580MB
 * rootfs partitions expand on first boot
 * Add venv support and pip support to system python
 * Add common python package dependencies (gunicorn, flask-sqlalchemy, requests)
 * Update system wpilib, scservices, and mrccomm to latest
-* 5GHz access point now supports (working) selectable channel widths: 20, 40, and 80 MHz. Defaults to 20 MHz.
-* Correct HT40 (40 MHz) and VHT80 (80 MHz) operation, including the proper secondary-channel offset (HT40+/−) and 80 MHz center-frequency.
-* Validated 20/40/80 MHz operation end-to-end on beta hardware; 80 MHz negotiates real VHT80 client rates (>=390 Mbit/s).
+* WiFi Improvements
+  * 5GHz access point now supports (working) selectable channel widths: 20, 40, and 80 MHz. Defaults to 20 MHz.
+  * Correct HT40 (40 MHz) and VHT80 (80 MHz) operation, including the proper secondary-channel offset (HT40+/−) and 80 MHz center-frequency.
+  * Validated 20/40/80 MHz operation end-to-end on beta hardware; 80 MHz negotiates real VHT80 client rates (>=390 Mbit/s).
 * Boot Time Improvements
   * Shave 9 seconds off WiFi AP automatic channel selection
   * Shave additional 9-10 seconds off AP initialization in both automatic channel and static channel configurations
