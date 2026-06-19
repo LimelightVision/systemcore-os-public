@@ -6,7 +6,7 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 11 and Beta 11 (In progress)
+## [Alpha 11](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-11-320) and [Beta 11](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-11-150) (In progress)
 
 ### OS
 
