@@ -11,8 +11,8 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 ### OS
 
 * OS Flash time reduced: 6 minutes -> ~46-48 seconds on windows
-* Unzipped image size reduced: 14.5GB -> 1.8GB
-* Image download size reduced: 1.05GB -> ~580MB
+* Unzipped image size reduced: 14.5GB -> 1.8GB (closes https://github.com/wpilibsuite/SystemcoreTesting/issues/230)
+* Image download size reduced: 1.05GB -> ~580MB 
 * rootfs partitions expand on first boot
 * Add venv support and pip support to system python
 * Add common python package dependencies (gunicorn, flask-sqlalchemy, requests)
@@ -65,6 +65,7 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 * 2.4Ghz WiFi is locked to 20mhz channel widths to minimize interference in congested environments.
 * Systemcore USB-Ethernet IP Addresses have changed: 172.26.0.1 for Windows users, 172.27.0.1 for Linux and MacOS users.
 * New partition layout
+* Can Bus Sniffer shutdown hang fixed (ttps://github.com/wpilibsuite/SystemcoreTesting/issues/223)
 
 ### Web Interface
 
