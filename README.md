@@ -8,9 +8,10 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 
 ## [Alpha 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-12-354) and [Beta 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-12-184)
 
-
+### OTA Updates
 * If you are running alpha/beta 11, you can update to this release using the .llupdate file and the new OTA (over-the-air) update feature in the Web UI's 'settings' tab. 
 
+### Vision
 * Add USB 2.0 camera support to all four USB Ports. Navigate to the "cameras" tab in the SC UI to view attached cameras and Hailo accelerators.
 * See the LimelightVision.md file in SystemcoreTesting for more information on the new vision API.
 * Add Limelight Smart Camera support. Support USB Limelights (LL3A, LL3G) and ethernet Limelights (LL4, LL3, LL2, etc)
@@ -26,6 +27,7 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
  * All USB cameras, whether curated or non-curated, present normalized control slider values.
 * Add Hailo support for cameras attached to USB Ports 0 and 1.
 
+### Performance
 * Drop IO Update frequency to 500hz.
 * canbussniffer drops to 0% CPU Util in paused state
 * motioncorevisualizer drops to ~0% cpu util unless motioncore is attached
@@ -33,12 +35,13 @@ NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting R
 * Enable CPU frequency scaling
 * Reduce Systemcore idle temperature
 
+### Misc
 * Fix canbus util percentages in new Driver Station
 * Support a301 release 15 decoding in Motioncorevisualizer
 * Smoother cpu util graphs/reading in web UI
-
 * Motioncore UI improved with proper resizing on both axes, reduced visual noise, and an improved color scheme.
 
+### Firmware 
 * Unwrapped/wrapped, trimmed/untrimmed imu fused yaw readings are now available (pending wpilib update)
 * IMU faults addressed
 * Add Quadrature encoder support (pending wpilib update)
