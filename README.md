@@ -38,6 +38,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ### Misc
 * Fix canbus util percentages in new Driver Station
 * Support a301 release 15 decoding in Motioncorevisualizer
+* Add ability to control A301 from RHWC without Driverstation enablement
 * Smoother cpu util graphs/reading in web UI
 * Motioncore UI improved with proper resizing on both axes, reduced visual noise, and an improved color scheme.
 
