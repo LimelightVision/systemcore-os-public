@@ -1,7 +1,7 @@
 Access to the latest Systemcore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
-NEW IMAGES MUST HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting Repo)
+NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See SystemcoreTesting Repo)
 
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
