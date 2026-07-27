@@ -6,6 +6,13 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
+## Release 13 (Prerelease, testing)
+
+* Can bus controller driver updates
+* OTA Update UI now presents options to retain team number, wifi settings, vision pipelies, and so on (defaulted true)
+* Thriftiest Cam Support (this camera will not support Auto Exposure for now)
+* Add rate to rising/falling edge counters (pending wpilib update)
+
 ## [Alpha 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-12-354) and [Beta 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-12-184)
 
 ### OTA Updates
