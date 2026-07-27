@@ -9,6 +9,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ## Release 13 (Prerelease, testing)
 
 * Can bus controller driver updates
+* Fix CAN utilization metrics in Web UI and Driverstation
 * OTA Update UI now presents options to retain team number, wifi settings, vision pipelies, and so on (defaulted true)
 * Thriftiest Cam Support (this camera will not support Auto Exposure for now)
 * Add rate/velocity and velocity window to rising/falling edge counters (pending wpilib update)
