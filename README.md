@@ -11,7 +11,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Can bus controller driver updates
 * OTA Update UI now presents options to retain team number, wifi settings, vision pipelies, and so on (defaulted true)
 * Thriftiest Cam Support (this camera will not support Auto Exposure for now)
-* Add rate to rising/falling edge counters (pending wpilib update)
+* Add rate/velocity and velocity window to rising/falling edge counters (pending wpilib update)
 
 ## [Alpha 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-12-354) and [Beta 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-12-184)
 
