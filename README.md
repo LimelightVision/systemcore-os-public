@@ -9,7 +9,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ## Release 13 (Prerelease, testing)
 
 * Can bus controller driver updates to address can bus freezing
-* Enable can frame coalescing by default for 1Mbps Can 2.0 and Motioncore 8Mbps
+* Enable can frame coalescing by default for 1Mbps Can 2.0 and Motioncore CAN FD
 * Disable WiFi powersave features
 * Hailo 4.23.0 -> 4.24.0
 * Fix CAN utilization metrics in Web UI and Driverstation
