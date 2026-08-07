@@ -8,7 +8,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
-### Can Bus Updates
+### Can Bus Updates (https://github.com/wpilibsuite/SystemcoreTesting/issues/342)
  * Fix CAN Bus freezing under moderate load
  * Fix CAN Bus frame drops under moderate load
  * Fix latency spikes during CAN Bus RX Frame Processing
@@ -27,22 +27,23 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ![checkcanbus](https://ik.imagekit.io/llimi/controlsystem/checkcanbus.png)
  
 ### Vision Updates
- * Address flickering gray window while using certain high-throughput video modes such as 1MP 90FPS.
- * Address some logitech cameras mis-reporting gain sliders
- * Add on-screen info regarding practical exposure limits, gain slider behavior during auto exposure for certain cameras, and so on.
- * Clicking on a camera tile creates a new browser tab
+ * Fix flickering gray pixel regions while using certain high-throughput video modes such as 1MP 90FPS. (https://github.com/wpilibsuite/SystemcoreTesting/issues/348)
+ * Fix some logitech cameras mis-reporting gain sliders (https://github.com/wpilibsuite/SystemcoreTesting/issues/350)
+ * Add on-screen info regarding practical exposure limits, gain slider behavior during auto exposure for certain cameras, and so on. (https://github.com/wpilibsuite/SystemcoreTesting/issues/357)
+ * Clicking on a camera tile creates a new browser tab (https://github.com/wpilibsuite/SystemcoreTesting/issues/354)
  * Add "Reset to Default" Buttons to most sliders that enable when the user has modified value such that it no longer matches the default value
- * Add "Reset Pipeline" button to vision instance headers to reset all pipeline configurations
+ * Add "Reset Pipeline" button to vision instance headers to reset all pipeline configurations (https://github.com/wpilibsuite/SystemcoreTesting/issues/355)
  * Thriftiest Cam Support (this camera will not support Auto Exposure for now) 
  * NexiGo F60 UHD Camera Support
 
 ### Other
-* Add the ability to change SmartIO types in the hardware snapshot pages. When a user enables IO type editing, robot code is stopped. Robot code restarts when the user is finished editing.
+* Add the ability to change SmartIO types in the hardware snapshot pages. When a user enables IO type editing, robot code is stopped. Robot code restarts when the user is finished editing. (https://github.com/wpilibsuite/SystemcoreTesting/issues/312)
 * Reduce CPU utilization of io and diagnostics services
 * Disable WiFi powersave features
 * Hailo 4.23.0 -> 4.24.0
 * OTA Update UI now presents options to retain team number, wifi settings, vision pipelies, and so on (defaulted true)
 * Add rate/velocity and velocity window to rising/falling edge counters (pending wpilib update)
+* Robot service startup cleanup (https://github.com/wpilibsuite/SystemcoreTesting/issues/290)
 
 ## [Alpha 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-12-354) and [Beta 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-12-184)
 
