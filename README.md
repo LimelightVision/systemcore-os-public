@@ -8,10 +8,10 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
-### Can Bus Updates (https://github.com/wpilibsuite/SystemcoreTesting/issues/342)
- * Fix CAN Bus freezing under moderate load
- * Fix CAN Bus frame drops under moderate load
- * Fix latency spikes during CAN Bus RX Frame Processing
+### Can Bus Updates
+ * Fix CAN Bus freezing under high load  (https://github.com/wpilibsuite/SystemcoreTesting/issues/342)
+ * Fix CAN Bus frame drops under high load  (https://github.com/wpilibsuite/SystemcoreTesting/issues/342)
+ * Fix latency spikes during CAN Bus RX Frame Processing  (https://github.com/wpilibsuite/SystemcoreTesting/issues/342)
  * Enable can frame coalescing by default for 1Mbps Can 2.0 and Motioncore CAN FD
 
 ### CAN Bus Web UI Updates
