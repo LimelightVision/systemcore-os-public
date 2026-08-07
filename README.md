@@ -17,10 +17,14 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ### CAN Bus Web UI Updates
  * Fix CAN utilization metrics in Web UI and Driverstation
  * Add FPS, Sample point, Nominal bitrate (FD ONLY) to the hardware snapshot window
- * Display warning when user approaches utilization limit for any of the 5 primary CAN Buses
+![canutil](https://ik.imagekit.io/llimi/controlsystem/canbusutil.png)
+ * Display warning when user exceeds max utilization recommendation (90%) for any of the 5 primary CAN Buses
+![can100](https://ik.imagekit.io/llimi/controlsystem/canbus100.png)
  * Display warning when user approaches frame rate limit for any individual CAN Bus or CAN Bus pair
  * Display warning when CAN BUS controllers report dropped frames
+![canhoverwarning](https://ik.imagekit.io/llimi/controlsystem/canhoverwarning.png)
  * Add "CHECK CAN BUS" to UI header in all windows to make CAN Bus health warnings as visible as possible
+![checkcanbus](https://ik.imagekit.io/llimi/controlsystem/checkcanbus.png)
  
 ### Vision Updates
  * Address flickering gray window while using certain high-throughput video modes such as 1MP 90FPS.
