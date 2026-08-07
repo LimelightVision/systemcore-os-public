@@ -8,13 +8,36 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 ## Release 13 (Prerelease, testing)
 
-* Can bus controller driver updates to address can bus freezing
-* Enable can frame coalescing by default for 1Mbps Can 2.0 and Motioncore CAN FD
+### Can Bus Updates
+ * Fix CAN Bus freezing under moderate load
+ * Fix CAN Bus frame drops under moderate load
+ * Fix latency spikes during CAN Bus RX Frame Processing
+ * Enable can frame coalescing by default for 1Mbps Can 2.0 and Motioncore CAN FD
+
+### CAN Bus Web UI Updates
+ * Fix CAN utilization metrics in Web UI and Driverstation
+ * Add FPS, Sample point, Nominal bitrate (FD ONLY) to the hardware snapshot window
+ * Display warning when user approaches utilization limit for any of the 5 primary CAN Buses
+ * Display warning when user approaches frame rate limit for any individual CAN Bus or CAN Bus pair
+ * Display warning when CAN BUS controllers report dropped frames
+ * Add "CHECK CAN BUS" to UI header in all windows to make CAN Bus health warnings as visible as possible
+ 
+### Vision Updates
+ * Address flickering gray window while using certain high-throughput video modes such as 1MP 90FPS.
+ * Address some logitech cameras mis-reporting gain sliders
+ * Add on-screen info regarding practical exposure limits, gain slider behavior during auto exposure for certain cameras, and so on.
+ * Clicking on a camera tile creates a new browser tab
+ * Add "Reset to Default" Buttons to most sliders that enable when the user has modified value such that it no longer matches the default value
+ * Add "Reset Pipeline" button to vision instance headers to reset all pipeline configurations
+ * Thriftiest Cam Support (this camera will not support Auto Exposure for now) 
+ * NexiGo F60 UHD Camera Support
+
+### Other
+* Add the ability to change SmartIO types in the hardware snapshot pages. When a user enables IO type editing, robot code is stopped. Robot code restarts when the user is finished editing.
+* Reduce CPU utilization of io and diagnostics services
 * Disable WiFi powersave features
 * Hailo 4.23.0 -> 4.24.0
-* Fix CAN utilization metrics in Web UI and Driverstation
 * OTA Update UI now presents options to retain team number, wifi settings, vision pipelies, and so on (defaulted true)
-* Thriftiest Cam Support (this camera will not support Auto Exposure for now)
 * Add rate/velocity and velocity window to rising/falling edge counters (pending wpilib update)
 
 ## [Alpha 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-alpha-12-354) and [Beta 12](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-beta-12-184)
