@@ -6,6 +6,22 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
+## Alpha 14 and Beta 14 (In Progress) (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
+
+### Changes
+ * 802.11w suppoort
+ * EMMC Health added to UI Header's fault report window
+ * Add storage usage to UI header
+ * Update Storage Devices page
+ * Remove RSL Unplug/Fault state and count from faults window
+ * IMU mount orientation tester change from radio buttons to drop down
+ * Significant reducion in cpu utilization of io and diagnostics services
+ * Add tooltips for all header information and all fault types
+ * Add tooltips around System Snapshot page
+ * Remove live graphs from System Snapshot page
+ * Add live robot program log and connectivity summary tile to System Snapshot page
+ * Add heavily throttled system log prints when RAM exceeds threshold
+ 
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
 ### Can Bus Updates
