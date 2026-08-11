@@ -26,6 +26,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Config Tab: Add ability to reset all vision pipelines for any any of the four USB vision instances.
  * Config Tab: Add ability to disable USB camera capture for individual USB ports
  * Add support for the third known Logitech C270 variant
+ * Guard against failures caused by mis-identified cameras.
  
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
