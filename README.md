@@ -30,7 +30,13 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Fix duplicate package descriptions in Package Tile tooltip and package manager rows
 
 ### (Rel 200, upcoming):
-Add default calibrations for:
+
+* Fix 2MP cameras crash looping in some cases
+* Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
+* Display "Default Calibration for <Cam Name> if LL default cal is in use for supported USB camera.
+ 
+
+#### Add default calibrations for:
 * Arducam OV9281 USB
 * Arducam OV9782 / goBILDA Global
 * Arducam OV2311 USB
@@ -47,7 +53,7 @@ Add default calibrations for:
 * Sony PS3 Eye (blue-dot lens)
 * ThriftyBot ThriftiestCam
 
-To be calibrated :
+#### To be calibrated :
 * Logitech C270 (960p variant)
 * Logitech C920 Family
 * Logitech C922 Pro Stream
@@ -55,10 +61,7 @@ To be calibrated :
 * ThriftyBot ThriftyCam
 * Logitech C930
 
-* Fix 2MP cameras crash looping in some cases
-* Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
-* Display "Default Calibration for <Cam Name> if LL default cal is in use for supported USB camera.
- 
+
  
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
