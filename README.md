@@ -29,7 +29,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Guard against failures caused by mis-identified cameras.
  * Fix duplicate package descriptions in Package Tile tooltip and package manager rows
 
-### (Rel 200, upcoming):
+### (Rel 201, upcoming):
 
 * Fix 2MP cameras crash looping in some cases
 * Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
@@ -52,14 +52,15 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Microsoft LifeCam HD-3000
 * Sony PS3 Eye (blue-dot lens)
 * ThriftyBot ThriftiestCam
-
-#### To be calibrated :
-* Logitech C270 (960p variant)
+* Logitech C930
 * Logitech C920 Family
 * Logitech C922 Pro Stream
 * Logitech 1080P Pro Stream
+
+#### To be calibrated :
+* Logitech C270 (960p variant)
 * ThriftyBot ThriftyCam
-* Logitech C930
+
 
 
  
