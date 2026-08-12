@@ -28,6 +28,34 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Add support for the third known Logitech C270 variant
  * Guard against failures caused by mis-identified cameras.
  * Fix duplicate package descriptions in Package Tile tooltip and package manager rows
+(Rel 200, upcoming):
+Add default calibrations for:
+* Arducam OV9281 USB
+* Arducam OV9782 / goBILDA Global
+* Arducam OV2311 USB
+* Innomaker OV9281 USB
+* Waveshare OV9281 USB
+* UC60 / goBILDA Rolling
+* Logitech Brio 101
+* Logitech Brio 100
+* Logitech C270 (720P Model B)
+* Logi C270 HD (720p variant)
+* Logitech C310
+* NexiGo N60 FHD
+* Microsoft LifeCam HD-3000
+* Sony PS3 Eye (blue-dot lens)
+* ThriftyBot ThriftiestCam
+
+To be calibrated :
+* Logitech C270 (960p variant)
+* Logitech C920 Family
+* Logitech C922 Pro Stream
+* Logitech 1080P Pro Stream
+* ThriftyBot ThriftyCam
+* Logitech C930
+
+Fix 2MP cameras crash looping in some cases
+ 
  
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
 
