@@ -29,7 +29,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Guard against failures caused by mis-identified cameras.
  * Fix duplicate package descriptions in Package Tile tooltip and package manager rows
 
-## (Rel 200, upcoming):
+### (Rel 200, upcoming):
 Add default calibrations for:
 * Arducam OV9281 USB
 * Arducam OV9782 / goBILDA Global
