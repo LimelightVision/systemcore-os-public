@@ -45,8 +45,8 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * UC60 / goBILDA Rolling
 * Logitech Brio 101
 * Logitech Brio 100
-* Logitech C270 (720P Model B)
-* Logi C270 HD (720p variant)
+* Logitech C270 (720P, Model B)
+* Logi C270 HD (720P, Model C)
 * Logitech C310
 * NexiGo N60 FHD
 * Microsoft LifeCam HD-3000
@@ -58,7 +58,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Logitech 1080P Pro Stream
 
 #### To be calibrated :
-* Logitech C270 (960p variant)
+* Logitech C270 (960p, Model A)
 * ThriftyBot ThriftyCam
 
 
