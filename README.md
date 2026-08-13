@@ -34,7 +34,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Fix 2MP cameras crash looping in some cases
 * Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
 * Display "Default Calibration for <Cam Name> if LL default cal is in use for supported USB camera.
- 
+* Quell warnings caused by buggy MJPEG implementation on some C270 models
 
 #### Add default calibrations for:
 * Arducam OV9281 USB
@@ -45,6 +45,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * UC60 / goBILDA Rolling
 * Logitech Brio 101
 * Logitech Brio 100
+* Logitech C270 (960p, Model A)
 * Logitech C270 (720P, Model B)
 * Logi C270 HD (720P, Model C)
 * Logitech C310
@@ -56,12 +57,6 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Logitech C920 Family
 * Logitech C922 Pro Stream
 * Logitech 1080P Pro Stream
-
-#### To be calibrated :
-* Logitech C270 (960p, Model A)
-* ThriftyBot ThriftyCam
-
-
 
  
 ## [Alpha 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha13-367) and [Beta 13](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta13-197)
