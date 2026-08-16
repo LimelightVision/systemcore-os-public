@@ -37,6 +37,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Full screen camerastreams page supports camera name routes
 * Fix snapshot thumbnail caching in vision instances
 * Begin i18n plumbing
+* Address C270 edge case failure that occurs when sharpness, contrast, and saturation are maxed-out simultaneously
 
 #### Add default calibrations for:
 * Arducam OV9281 USB
