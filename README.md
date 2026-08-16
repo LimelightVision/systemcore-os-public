@@ -32,6 +32,11 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
 * Display "Default Calibration for <Cam Name> if LL default cal is in use for supported USB camera.
 * Quell warnings caused by buggy MJPEG implementation on some C270 models
+* Add 'Download Log' button to each service row
+* Add Ports, Firewall system views
+* Full screen camerastreams page supports camera name routes
+* Fix snapshot thumbnail caching in vision instances
+* Begin i18n plumbing
 
 #### Add default calibrations for:
 * Arducam OV9281 USB
