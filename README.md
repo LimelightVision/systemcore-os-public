@@ -36,8 +36,9 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Add Ports, Firewall system views
 * Full screen camerastreams page supports camera name routes
 * Fix snapshot thumbnail caching in vision instances
-* Begin i18n plumbing
+* Add UI translations
 * Address C270 edge case failure that occurs when sharpness, contrast, and saturation are maxed-out simultaneously
+* Update 3D model in IMU visualizer
 
 #### Add default calibrations for:
 * Arducam OV9281 USB
