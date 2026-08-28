@@ -9,6 +9,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ## Alpha 14 and Beta 14 (In Progress) (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
 
 ### Changes
+ * Improve IMU no-motion drift
  * 802.11w suppoort
  * EMMC Health added to UI Header's fault report window
  * Add storage usage to UI header
