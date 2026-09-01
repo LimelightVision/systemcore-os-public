@@ -14,6 +14,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Reduce Boot->Screen-On time by ~6 seconds (~13 seconds now)
  * Improve IMU no-motion drift
  * 802.11w suppoort
+ * Remove some tracing/debug capability
  * EMMC Health added to UI Header's fault report window
  * Add storage usage to UI header
  * Update Storage Devices page
