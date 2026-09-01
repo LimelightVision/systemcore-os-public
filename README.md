@@ -13,6 +13,9 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Reduce Boot->USBC connectivity time by ~5.9 seconds
  * Reduce Boot->Robot Code time by ~1.6 seconds
  * Reduce Boot->Screen-On time by ~6 seconds (~13 seconds now)
+ * Built in vision supports wpilib change from us to ns
+ * Update WPILib to latest
+ * Update Elastic to latest on whep branch
  * Improve IMU no-motion drift
  * 802.11w suppoort
  * Remove some tracing/debug capability
