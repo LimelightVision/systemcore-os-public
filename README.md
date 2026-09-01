@@ -9,6 +9,9 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ## Alpha 14 and Beta 14 (In Progress) (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
 
 ### Changes
+ * Reduce Boot->Connectivity time by ~1.6 seconds
+ * Reduce Boot->Robot Code time by ~1.6 seconds
+ * Reduce Boot->Screen-On time by ~6 seconds (~13 seconds now)
  * Improve IMU no-motion drift
  * 802.11w suppoort
  * EMMC Health added to UI Header's fault report window
