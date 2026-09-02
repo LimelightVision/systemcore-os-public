@@ -6,7 +6,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-### Alpha 15 and Beta 15 (Unreleased)
+## Alpha 15 and Beta 15 (Unreleased)
 
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
 
