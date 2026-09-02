@@ -6,13 +6,17 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 14 and Beta 14 (In Progress) (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
+### Alpha 15 and Beta 15 (Unreleased)
+
+ * Reduce Boot-> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
+
+## Alpha 14 and Beta 14 (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
 
 ### Changes (not all in effect until final release marked)
- * Reduce Boot->Wifi/Eth Connectivity time by ~1.6 seconds
- * Reduce Boot->USBC connectivity time by ~5.9 seconds
- * Reduce Boot->Robot Code time by ~1.6 seconds
- * Reduce Boot->Screen-On time by ~6 seconds (~13 seconds now)
+ * Reduce Boot->Wifi/Eth Connectivity time by ~.9 seconds
+ * Reduce Boot->USBC connectivity time by ~5.2 seconds
+ * Reduce Boot->Robot Code time by ~.9 seconds
+ * Reduce Boot->Screen-On time by ~5.3 seconds (~14 seconds now)
  * Built in vision supports wpilib change from us to ns
  * Update WPILib to latest
  * Update Elastic to latest on whep branch
