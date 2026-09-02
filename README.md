@@ -31,7 +31,7 @@ Before updating, ensure vendors have added device support for WPILIB Alpha 7
  * Remove some tracing/debug capability
  * Update internal WPILib to 2027 alpha 7
  * Significant reduction in cpu utilization of io and diagnostics services
- * Add heavily throttled system log prints when RAM exceeds threshold
+ * Add system log prints when RAM utilization exceeds threshold
  * CAN Bus watchdog is robust against rapid failures in succession
 
 ### UI Updates
