@@ -8,8 +8,8 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 ## Alpha 15 and Beta 15 (Unreleased)
 
- * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
- * Reduce Boot -> screen-on time by ~3.6 seconds.
+ * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.2 seconds
+ * Reduce Boot -> screen-on time by ~2.9 seconds.
 
 ## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
 
