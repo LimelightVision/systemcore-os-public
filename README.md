@@ -9,49 +9,62 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ## Alpha 15 and Beta 15 (Unreleased)
 
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
+ * Reduce Boot -> screen-on time by ~3.6 seconds.
 
-## Alpha 14 and Beta 14 (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
+## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
 
-### Changes (not all in effect until final release marked)
- * Reduce Boot->Wifi/Eth Connectivity time by ~.9 seconds
- * Reduce Boot->USBC connectivity time by ~5.2 seconds
- * Reduce Boot->Robot Code time by ~.9 seconds
- * Reduce Boot->Screen-On time by ~5.3 seconds (~14 seconds now)
- * Built in vision supports wpilib change from us to ns
- * Update WPILib to latest
- * Update Elastic to latest on whep branch
- * Improve IMU no-motion drift
- * 802.11w suppoort
+### Boot Cleanup
+ * Reduce Boot -> Wi-Fi/Eth Connectivity time by ~.9 seconds
+ * Reduce Boot -> USBC connectivity time by ~5.2 seconds
+ * Reduce Boot -> Robot Code time by ~.9 seconds
+ * Reduce Boot -> Screen-On time by ~5.3 seconds (~14 seconds now)
+ * Address failed tty service
+ * Service ordering updates
+
+### IMU
+ * Significantly improve IMU no-motion yaw drift.
+
+### OS
+ * 802.11w PMF support
  * Remove some tracing/debug capability
+ * Update internal WPILib to 2027 alpha 7
+ * Significant reduction in cpu utilization of io and diagnostics services
+ * Add heavily throttled system log prints when RAM exceeds threshold
+ * CAN Bus watchdog is robust against rapid failures in succession
+
+### UI Updates
+ * Update Elastic to latest on whep branch
  * EMMC Health added to UI Header's fault report window
  * Add storage usage to UI header
  * Update Storage Devices page
  * Remove RSL Unplug/Fault state and count from faults window
- * IMU mount orientation tester change from radio buttons to drop down
- * Significant reducion in cpu utilization of io and diagnostics services
+ * Change IMU mount orientation tester from radio button to drop down
  * Add tooltips for all header information and all fault types
  * Add tooltips around System Snapshot page
  * Remove live graphs from System Snapshot page
  * Add live robot program log and connectivity summary tile to System Snapshot page
- * Add heavily throttled system log prints when RAM exceeds threshold
- * Canbus watchdog is robust against rapid failures in succession
- * Cameras Tab: Add button to bring user to a full-screen video stream viewer
- * Config Tab: Add ability to reset all vision pipelines for any any of the four USB vision instances.
- * Config Tab: Add ability to disable USB camera capture for individual USB ports
- * Add support for the third known Logitech C270 variant
- * Guard against failures caused by mis-identified cameras.
  * Fix duplicate package descriptions in Package Tile tooltip and package manager
+ * Add 'Download Log' button to each service row
+ * Add Ports, Firewall system views
+ * Full screen camerastreams page supports camera name routes
+ * Add UI translations
+ * Update 3D model in IMU visualizer
+
+### Vision
+* Built in vision supports wpilib change from us to ns
+* Cameras Tab: Add button to bring user to a full-screen video stream viewer
+* Config Tab: Add ability to reset all vision pipelines for any any of the four USB vision instances.
+* Config Tab: Add ability to disable USB camera capture for individual USB ports
+* Quell warnings caused by buggy MJPEG implementation on some C270 models
+* Add support for the third known Logitech C270 variant
+* Address C270 edge case failure that occurs when sharpness, contrast, and saturation are maxed-out simultaneously
+* Guard against failures caused by mis-identified cameras.
 * Fix 2MP cameras crash looping in some cases
+* All vision updates, including robot code pipeline overrides from deploy folder and robot code shared fmaps from deploy folder.
 * Red calibration page banner if truly generic/random calibration is in use (EG unsupported USB camera without LL default cal).
 * Display "Default Calibration for <Cam Name> if LL default cal is in use for supported USB camera.
-* Quell warnings caused by buggy MJPEG implementation on some C270 models
-* Add 'Download Log' button to each service row
-* Add Ports, Firewall system views
-* Full screen camerastreams page supports camera name routes
 * Fix snapshot thumbnail caching in vision instances
-* Add UI translations
-* Address C270 edge case failure that occurs when sharpness, contrast, and saturation are maxed-out simultaneously
-* Update 3D model in IMU visualizer
+
 
 #### Add default calibrations for:
 * Arducam OV9281 USB
