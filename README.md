@@ -8,7 +8,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 ### Alpha 15 and Beta 15 (Unreleased)
 
- * Reduce Boot-> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
+ * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.9 seconds
 
 ## Alpha 14 and Beta 14 (REQURIES WPILIB ALPHA 7, CURRENTLY UNRELEASED)
 
