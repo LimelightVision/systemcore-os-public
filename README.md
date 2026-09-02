@@ -35,6 +35,7 @@ Before updating, ensure vendors have added device support for WPILIB Alpha 7
  * CAN Bus watchdog is robust against rapid failures in succession
 
 ### UI Updates
+ * Add Support Bundle Generator top-level tab
  * Update Elastic to latest on whep branch
  * EMMC Health added to UI Header's fault report window
  * Add storage usage to UI header
