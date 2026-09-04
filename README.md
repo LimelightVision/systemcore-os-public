@@ -22,7 +22,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Enable OTA Updates
 * Bank light blink pattern during OTA update
 * Fix false-flag RX overflows on Motioncore FD port. In some cases, users would observe a periodic false RX overflow.
-* Systemcore power rail is never disabled. Reduces boot time.
+* Systemcore power rail is never disabled outside of short circuit cases. Reduces boot time.
 * Various tweaks
 
 
