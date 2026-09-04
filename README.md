@@ -21,7 +21,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 ### Motioncore 0.7.0 + 0.7.1
 * Enable OTA Updates
 * Bank light blink pattern during OTA update
-* Fix false-flag RX overflow on Motioncore FD port. In some cases, users could see a false RX overflow every ~10 seconds.
+* Fix false-flag RX overflows on Motioncore FD port. In some cases, users would observe a periodic false RX overflow.
 * Various tweaks
 
 ## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
