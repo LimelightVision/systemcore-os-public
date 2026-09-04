@@ -22,7 +22,9 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Enable OTA Updates
 * Bank light blink pattern during OTA update
 * Fix false-flag RX overflows on Motioncore FD port. In some cases, users would observe a periodic false RX overflow.
+* Systemcore power rail is never disabled. Reduces boot time.
 * Various tweaks
+
 
 ## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
 
