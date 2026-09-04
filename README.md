@@ -10,6 +10,17 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.2 seconds
  * Reduce Boot -> screen-on time by ~2.9 seconds.
+ * Add Motioncore OTA update on boot (Requires Motioncore 0.7.0 manual installation over USB)
+ * Motioncore device communication is halted during OTA updates.
+ * Motioncore device ports are powercycled after OTA updates are complete
+ * Motioncore OTA progress, attempt flag, success flag posted to internal /mc/ota table.
+ <img width="261" height="71" alt="image" src="https://github.com/user-attachments/assets/232fc480-9430-40ca-b05e-b2b63f7277c4" />
+
+
+### Motioncore 0.7.0 + 0.7.1
+* Enable OTA Updates
+* Fix false-flag RX overflow on Motioncore FD port. In some cases, users could see a false RX overflow every ~10 seconds.
+* Various tweaks
 
 ## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
 
