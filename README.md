@@ -14,11 +14,13 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Motioncore device communication is halted during OTA updates.
  * Motioncore device ports are powercycled after OTA updates are complete
  * Motioncore OTA progress, attempt flag, success flag posted to internal /mc/ota table.
+ * Robot code is stopped during OTA updates and restarted after OTA success
  <img width="261" height="71" alt="image" src="https://github.com/user-attachments/assets/232fc480-9430-40ca-b05e-b2b63f7277c4" />
 
 
 ### Motioncore 0.7.0 + 0.7.1
 * Enable OTA Updates
+* Bank light blink pattern during OTA update
 * Fix false-flag RX overflow on Motioncore FD port. In some cases, users could see a false RX overflow every ~10 seconds.
 * Various tweaks
 
