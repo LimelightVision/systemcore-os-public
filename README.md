@@ -20,7 +20,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Reduce memory utilization of any active vision processes on systemcore
  * Reduce memory utilization of language-based image classifiers (~170MB saved per instance, combining visionserver + hailo runtime)
  * Improve accuracy of process memory column (from RSS to PSS)
- * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines now capture at 30FPS instead of 28)
+ * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines on 30FPS cameras now capture at 30FPS instead of 28)
  
 
 ### Motioncore 0.7.0 + 0.7.1
