@@ -6,7 +6,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 15 and Beta 15 (Unreleased)
+## Alpha 15 and Beta 15 (listed changes might not be present until final release)
 
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.2 seconds
  * Reduce Boot -> screen-on time by ~2.9 seconds.
@@ -17,6 +17,11 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Robot code is stopped during OTA updates and restarted after OTA success
  <img width="261" height="71" alt="image" src="https://github.com/user-attachments/assets/232fc480-9430-40ca-b05e-b2b63f7277c4" />
 
+ * Reduce memory utilization of any active vision processes on systemcore
+ * Reduce memory utilization of language-based image classifiers (~170MB saved per instance, combining visionserver + hailo runtime)
+ * Improve accuracy of process memory column (from RSS to PSS)
+ * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines now capture at 30FPS instead of 28)
+ 
 
 ### Motioncore 0.7.0 + 0.7.1
 * Enable OTA Updates
