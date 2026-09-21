@@ -22,6 +22,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Improve accuracy of process memory column (from RSS to PSS)
  * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines on 30FPS cameras now capture at 30FPS instead of 28)
  * More detailed EMMC health display
+ * Beta OLED displays stay on. They operate with reduced brightness and framerate after a period of no-motion rather than turning off. Alpha OLED displays continue to turn off after the no-motion period.
 
 ### Motioncore 0.7.0 + 0.7.1
 * Enable OTA Updates
