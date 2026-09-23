@@ -28,6 +28,9 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Add USB Boot capability
  * In hardware manager 2.0.12, the bootloader tab allows teams to change the boot source from (EMMC with USB Fallback) to (USB Only)
  * In hardware manager 2.0.12, teams can flash USB Drives attached to Systemcore or USB Drives attached to the host machine if the (Show USB flash drives) checkbox is checked
+ * Systemcores booted from USB can be OTA updated with systemcore-usb .llupdate files.
+ * OTA refuses USB .llupdates on EMMC booted Systemcores and vice-versa
+ * Systemcores booted from EMMC will not mount any partitions from a USB Drive with a Systemcore USB Boot image
  * USB image artifacts are not yet public
 
  * Add reboot watchdog, systemd watchdog, separate peripheral watchdog
