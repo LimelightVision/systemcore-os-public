@@ -23,6 +23,14 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines on 30FPS cameras now capture at 30FPS instead of 28)
  * More detailed EMMC health display
  * Beta OLED displays stay on. They operate with reduced brightness and framerate after a period of no-motion rather than turning off. Alpha OLED displays continue to turn off after the no-motion period.
+ * Fix kernel toolchain misalignment introduced in release 14
+
+ * Add USB Boot capability
+ * In hardware manager 2.0.12, the bootloader tab allows teams to change the boot source from (EMMC with USB Fallback) to (USB Only)
+ * In hardware manager 2.0.12, teams can flash USB Drives attached to Systemcore or USB Drives attached to the host machine if the (Show USB flash drives) checkbox is checked
+ * USB image artifacts are not yet public
+
+ * Add reboot watchdog, systemd watchdog, separate peripheral watchdog
 
 ### Motioncore 0.7.0 + 0.7.1
 * Enable OTA Updates
