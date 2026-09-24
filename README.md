@@ -32,6 +32,8 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * OTA refuses USB .llupdates on EMMC booted Systemcores and vice-versa
  * Systemcores booted from EMMC will not mount any partitions from a USB Drive with a Systemcore USB Boot image
  * USB image artifacts are not yet public
+ * The settings page indicates a USB-booted Systemcore with the -usb suffixed hardware type
+ * ![hwtypeusb](https://ik.imagekit.io/llimi/controlsystem/hwtype.png)
 
  * Add reboot watchdog, systemd watchdog, separate peripheral watchdog
 
