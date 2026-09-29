@@ -12,6 +12,10 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.2 seconds
  * Reduce Boot -> screen-on time by ~2.9 seconds.
 
+### Package Updates
+* Add AdvantageScope-Lite Alpha 6
+* Update Blocks to 0.6
+
 ### Memory Utilization
  * Reduce memory utilization of any active vision processes on systemcore
  * Reduce memory utilization of language-based image classifiers (~170MB saved per instance, combining visionserver + hailo runtime)
