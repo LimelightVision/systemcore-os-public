@@ -6,25 +6,22 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha 15 and Beta 15 (listed changes might not be present until final release)
+## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) 
 
+### Boot Times
  * Reduce Boot -> Wi-Fi, Eth, USBC, Robot Code time by ~2.2 seconds
  * Reduce Boot -> screen-on time by ~2.9 seconds.
- * Add Motioncore OTA update on boot (Requires Motioncore 0.7.0 manual installation over USB)
- * Motioncore device communication is halted during OTA updates.
- * Motioncore device ports are powercycled after OTA updates are complete
- * Motioncore OTA progress, attempt flag, success flag posted to internal /mc/ota table.
- * Robot code is stopped during OTA updates and restarted after OTA success
- <img width="261" height="71" alt="image" src="https://github.com/user-attachments/assets/232fc480-9430-40ca-b05e-b2b63f7277c4" />
 
+### Memory Utilization
  * Reduce memory utilization of any active vision processes on systemcore
  * Reduce memory utilization of language-based image classifiers (~170MB saved per instance, combining visionserver + hailo runtime)
  * Improve accuracy of process memory column (from RSS to PSS)
- * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines on 30FPS cameras now capture at 30FPS instead of 28)
- * More detailed EMMC health display
- * Beta OLED displays stay on. They operate with reduced brightness and framerate after a period of no-motion rather than turning off. Alpha OLED displays continue to turn off after the no-motion period.
- * Fix kernel toolchain misalignment introduced in release 14
 
+### Watchdogs
+ * Add reboot watchdog, systemd watchdog, RP1 peripheral watchdogs
+ * Add automatic shutdown at sustained 95C CPU temp
+
+### USB Boot
  * Add USB Boot capability
  * In hardware manager 2.0.12, the bootloader tab allows teams to change the boot source from (EMMC with USB Fallback) to (USB Only)
  * In hardware manager 2.0.12, teams can flash USB Drives attached to Systemcore or USB Drives attached to the host machine if the (Show USB flash drives) checkbox is checked
@@ -35,14 +32,26 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
  * The settings page indicates a USB-booted Systemcore with the -usb suffixed hardware type
  * ![hwtypeusb](https://ik.imagekit.io/llimi/controlsystem/hwtype.png)
 
- * Add reboot watchdog, systemd watchdog, separate peripheral watchdog
+### Motioncore
+ * Add Motioncore OTA update on boot (Requires Motioncore 0.7.0 manual installation over USB)
+ * Motioncore device communication is halted during OTA updates.
+ * Motioncore device ports are powercycled after OTA updates are complete
+ * Motioncore OTA progress, attempt flag, success flag posted to internal /mc/ota table.
+ * Robot code is stopped during OTA updates and restarted after OTA success
+ <img width="261" height="71" alt="image" src="https://github.com/user-attachments/assets/232fc480-9430-40ca-b05e-b2b63f7277c4" />
 
-### Motioncore 0.7.0 + 0.7.1
+### Motioncore FW 0.7.0 + 0.7.1
 * Enable OTA Updates
 * Bank light blink pattern during OTA update
 * Fix false-flag RX overflows on Motioncore FD port. In some cases, users would observe a periodic false RX overflow.
 * Systemcore power rail is never disabled outside of short circuit cases. Reduces boot time.
 * Various tweaks
+
+### Other
+ * Fix bug in image capture pipeline that was effectively capping FPS below capture FPS. (EG, viewfinder pipelines on 30FPS cameras now capture at 30FPS instead of 28)
+ * More detailed EMMC health display
+ * Beta OLED displays stay on. They operate with reduced brightness and framerate after a period of no-motion rather than turning off. Alpha OLED displays continue to turn off after the no-motion period.
+ * Fix kernel toolchain misalignment introduced in release 14
 
 
 ## [Alpha 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha14-380) and [Beta 14](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta14-210) (BREAKING CHANGES - REQUIRES WPILIB ALPHA 7)
