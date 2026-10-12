@@ -35,6 +35,11 @@ Ghost CSA was a great help during the event, in some cases finding issues in und
 * Kill WiFi when connected to FMS. Restores on boot if not disabled in UI
 * ..
 
+### Diagnostics
+* More frequent journal flushing
+* pstore enabled, retain separately
+* (progress) separate system wpilog with system diagnostics
+
 ### Other
 Fix white-text-on-white-background banners 
 
