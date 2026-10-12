@@ -24,7 +24,8 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 * Show Disk Util metrics next to each OTA checkbox
 * Default Retain Robot Logs to false (rev logs may sneak through until revlib updates arrive)
 * Kill robot code during OTA, Restart on failure
-* Add resilience against spurious chromium ECONNRESET and brief connectivity loss (killed TCP connection AND . OTA updates could be disturbed by changes to unrelated network interfaces.
+* Add resilience against TCP loss and silent disconnections. ~10sec timeout
+  * OTA updates could be killed by changes to unrelated network interfaces. Chromium and Windows both seem to contribute to this.
 
 ### Support Bundle Generator & Ghost CSA
 Ghost CSA was a great help during the event, in some cases finding issues in under 60 seconds while support personnel were loading manual log analysis tools. Teams started using the tool on their own to fix robot issues without support.
