@@ -32,7 +32,7 @@ Ghost CSA was a great help during the event, in some cases finding issues in und
 * Include java robot code JARs for potential pinpointed code fixes
 
 ### WiFi
-* Kill WiFi when connected to FMS. Restores on boot if not disabled in UI
+* Disable WiFi when connected to FMS. WiFi restores on boot if not disabled in UI
 * ..
 
 ### Diagnostics
