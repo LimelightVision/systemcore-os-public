@@ -6,7 +6,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha and Beta 17 (In Progress)
+## Alpha and Beta 17 (In Progress, Unstable)
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
 
@@ -42,7 +42,7 @@ Ghost CSA was a great help during the event, in some cases finding issues in und
 
 ### Other
 Fix white-text-on-white-background banners 
-
+Blocks 0.6 to 0.8
 
 ## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) (REQUIRES WPILIB ALPHA 7 OR LATER)
 
