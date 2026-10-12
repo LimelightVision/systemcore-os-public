@@ -6,6 +6,38 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
+## Alpha and Beta 17 (In Progress)
+
+Updates in release 17 are largely based on SoCal Showdown experiences:
+
+### Kernel
+* 6.12.77 to 6.12.112
+
+### EEPROM Firmware Update Web UI
+* Add EEPROM firmware version diagnostics and update tool to settings page. 
+
+### hostname fixer (release 16)
+*  Radio IP assignment could break if teams made manual networking changes before release 16. Add on-boot fixup logic to ensure robot.local always works.
+
+### OTA
+* Separate "Retain Robot Code" and "Retain Robot Logs" checkboxes in the OTA UI. Logs are huge and add time to OTA updates.
+* Show Disk Util metrics next to each OTA checkbox
+* Default Retain Robot Logs to false (rev logs may sneak through until revlib updates arrive)
+* Kill robot code during OTA, Restart on failure
+* Add resilience against spurious chromium ECONNRESET and brief connectivity loss (killed TCP connection AND . OTA updates could be disturbed by changes to unrelated network interfaces.
+
+### Support Bundle Generator & Ghost CSA
+Ghost CSA was a great help during the event, in some cases finding issues in under 60 seconds while support personnel were loading manual log analysis tools. Teams started using the tool on their own to fix robot issues without support.
+* Include java robot code JARs for potential pinpointed code fixes
+
+### WiFi
+* Kill WiFi when connected to FMS. Restores on boot if not disabled in UI
+* ..
+
+### Other
+Fix white-text-on-white-background banners 
+
+
 ## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) (REQUIRES WPILIB ALPHA 7 OR LATER)
 
 ### Boot Times
