@@ -6,7 +6,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha and Beta 17 (In Progress, Unstable)
+## Alpha and Beta 17 (In Progress)
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
 
