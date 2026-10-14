@@ -40,6 +40,9 @@ Ghost CSA was a great help during the event, in some cases finding issues in und
 * pstore enabled, retain separately
 * (progress) separate system wpilog with system diagnostics
 
+### IMU Recovery Path
+rtsubsystem watchdog reset triggered by host reboot during a specific spi bus transaction would place the imu in a state that required a deeper rest
+
 ### Other
 Fix white-text-on-white-background banners 
 Blocks 0.6 to 0.8
