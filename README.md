@@ -33,7 +33,7 @@ Ghost CSA was a great help during the event, in some cases finding issues in und
 
 ### WiFi
 * Disable WiFi when connected to FMS. WiFi restores on boot if not disabled in UI
-* ..
+* WiFi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
 
 ### Diagnostics
 * More frequent journal flushing
