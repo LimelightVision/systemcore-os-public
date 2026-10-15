@@ -40,7 +40,7 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 
 ### Support Bundle Generator & Ghost CSA
 Ghost CSA was a great help during the event, in some cases finding issues in under 60 seconds while support personnel were loading manual log analysis tools. Teams started using the tool on their own to fix robot issues without support.
-* Include java robot code JARs for potential pinpointed code fixes
+* Add option to include robot program. This may expose robot code (warning displayed)
 
 
 ### Diagnostics
