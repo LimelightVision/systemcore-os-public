@@ -17,6 +17,10 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 * If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be retreived via the web ui.
 * Wi-Fi changes are blocked while connected to FMS. FMS-driven request denial will likely expand to cover other features.
 
+### CAN Bus
+* Increase drop-less CAN FPS per SPI Bus by at least 30%
+* Fix "Hz" column in CAN Bus Monitor to properly handle coalesced frames
+
 ### Kernel
 * 6.12.77 to 6.12.112
 
