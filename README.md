@@ -10,6 +10,12 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
 
+### Wi-Fi (BREAKING CHANGE)
+* Disable WiFi when connected to FMS. WiFi restores on boot if not disabled in UI
+* WiFi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
+* Users can modify the SSID Prefix alone. The SSID Suffix is locked and unique per-unit.
+* If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be retreived via the web ui.
+
 ### Kernel
 * 6.12.77 to 6.12.112
 
@@ -31,9 +37,6 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 Ghost CSA was a great help during the event, in some cases finding issues in under 60 seconds while support personnel were loading manual log analysis tools. Teams started using the tool on their own to fix robot issues without support.
 * Include java robot code JARs for potential pinpointed code fixes
 
-### WiFi
-* Disable WiFi when connected to FMS. WiFi restores on boot if not disabled in UI
-* WiFi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
 
 ### Diagnostics
 * More frequent journal flushing
@@ -46,6 +49,7 @@ rtsubsystem watchdog reset triggered by host reboot during a specific spi bus tr
 ### Other
 Fix white-text-on-white-background banners 
 Blocks 0.6 to 0.8
+Add uptime and reboot count to the System Snapshot Connectivity Card.
 
 ## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) (REQUIRES WPILIB ALPHA 7 OR LATER)
 
