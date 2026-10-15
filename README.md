@@ -15,6 +15,7 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 * WiFi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
 * Users can modify the SSID Prefix alone. The SSID Suffix is locked and unique per-unit.
 * If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be retreived via the web ui.
+* Wi-Fi changes are blocked while connected to FMS. FMS-driven request denial will likely expand to cover other features.
 
 ### Kernel
 * 6.12.77 to 6.12.112
