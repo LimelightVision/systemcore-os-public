@@ -11,11 +11,12 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 Updates in release 17 are largely based on SoCal Showdown experiences:
 
 ### Wi-Fi (BREAKING CHANGE)
-* Disable WiFi when connected to FMS. WiFi restores on boot if not disabled in UI
-* WiFi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
+* Wi-Fi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
 * Users can modify the SSID Prefix alone. The SSID Suffix is locked and unique per-unit.
-* If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be retreived via the web ui.
+* If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be viewed in the web UI.
 * Wi-Fi changes are blocked while connected to FMS. FMS-driven request denial will likely expand to cover other features.
+* (Initial plumbing to disable WiFi when connected to FMS. Full functionality to be enabled in release 18. WiFi restores on boot if not disabled in UI.)
+
 
 ### CAN Bus
 * Increase drop-less CAN FPS per SPI Bus by at least 30%
@@ -42,14 +43,13 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 Ghost CSA was a great help during the event, in some cases finding issues in under 60 seconds while support personnel were loading manual log analysis tools. Teams started using the tool on their own to fix robot issues without support.
 * Add option to include robot program. This may expose robot code (warning displayed)
 
-
 ### Diagnostics
 * More frequent journal flushing
 * pstore enabled, retain separately
 * (progress) separate system wpilog with system diagnostics
 
 ### IMU Recovery Path
-rtsubsystem watchdog reset triggered by host reboot during a specific spi bus transaction would place the imu in a state that required a deeper rest
+rtsubsystem watchdog reset triggered by host reboot during a transaction could place the imu in a state that required a modified reconfiguration path.
 
 ### Other
 Fix white-text-on-white-background banners 
