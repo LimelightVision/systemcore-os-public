@@ -32,8 +32,6 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 ### EEPROM Firmware Update Web UI
 * Add EEPROM firmware version diagnostics and update tool to settings page. 
 
-### hostname fixer (release 16)
-*  Radio IP assignment could break if teams made manual networking changes before release 16. Add on-boot fixup logic to ensure robot.local always works.
 
 ### OTA
 * Separate "Retain Robot Code" and "Retain Robot Logs" checkboxes in the OTA UI. Logs are huge and add time to OTA updates.
@@ -66,6 +64,10 @@ Canivore is not yet supported in release 17
 
 * Improve radio connectivity
 * Supports Canivore packages build for release 15.
+* 
+### hostname fixer 
+*  Radio IP assignment could break if teams made manual networking changes before release 16. Add on-boot fixup logic to ensure robot.local always works.
+
 
 ## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) (REQUIRES WPILIB ALPHA 7 OR LATER)
 
