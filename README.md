@@ -6,9 +6,14 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR LATER (See Sys
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## Alpha and Beta 17 (In Progress)
+## [Alpha 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha17-403) and [Beta 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta17-233) (Canivore support pending)
+
+Canivore is not yet supported in release 17
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
+
+### Random Reboots Addressed
+* System lockup/hardware watchdog reboot reproduced and fixed.
 
 ### Wi-Fi (BREAKING CHANGE)
 * Wi-Fi SSID and Password are based on serial number. If Password has not been overwritten, it is displayed on screen.
@@ -16,7 +21,6 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 * If the Wi-Fi password has not been changed from the per-unit default, it is displayed on the first line of the OLED display. It can also be viewed in the web UI.
 * Wi-Fi changes are blocked while connected to FMS. FMS-driven request denial will likely expand to cover other features.
 * (Initial plumbing to disable WiFi when connected to FMS. Full functionality to be enabled in release 18. WiFi restores on boot if not disabled in UI.)
-
 
 ### CAN Bus
 * Increase drop-less CAN FPS per SPI Bus by at least 30%
@@ -55,6 +59,13 @@ rtsubsystem watchdog reset triggered by host reboot during a transaction could p
 Fix white-text-on-white-background banners 
 Blocks 0.6 to 0.8
 Add uptime and reboot count to the System Snapshot Connectivity Card.
+
+Canivore is not yet supported in release 17
+
+## [Alpha 16](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha16-391) and [Beta 16 ](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta16-221)(In Progress)
+
+* Improve radio connectivity
+* Supports Canivore packages build for release 15.
 
 ## [Alpha 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha15-390) and [Beta 15](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta15-220) (REQUIRES WPILIB ALPHA 7 OR LATER)
 
