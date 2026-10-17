@@ -64,8 +64,8 @@ Canivore is not yet supported in release 17
 
 * Improve radio connectivity
 * Supports Canivore packages build for release 15.
-* 
-### hostname fixer 
+  
+### DHCP Fixer 
 *  Radio IP assignment could break if teams made manual networking changes before release 16. Add on-boot fixup logic to ensure robot.local always works.
 
 
