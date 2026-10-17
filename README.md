@@ -63,7 +63,7 @@ Canivore is not yet supported in release 17
 ## [Alpha 16](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha16-391) and [Beta 16 ](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta16-221)
 
 * Improve radio connectivity
-* Supports Canivore packages build for release 15.
+* Supports Canivore packages for release 15.
   
 ### DHCP Fixer 
 *  Radio IP assignment could break if teams made manual networking changes before release 16. Add on-boot fixup logic to ensure robot.local always works.
