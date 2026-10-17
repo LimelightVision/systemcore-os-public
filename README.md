@@ -62,7 +62,7 @@ Add uptime and reboot count to the System Snapshot Connectivity Card.
 
 Canivore is not yet supported in release 17
 
-## [Alpha 16](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha16-391) and [Beta 16 ](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta16-221)(In Progress)
+## [Alpha 16](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha16-391) and [Beta 16 ](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta16-221)
 
 * Improve radio connectivity
 * Supports Canivore packages build for release 15.
