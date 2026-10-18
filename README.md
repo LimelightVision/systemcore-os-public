@@ -27,25 +27,49 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 
 Testing the shared can_s3 + can_s4 at 5Mbps FD:
 
-**Shared CAN Buses Before Release 17** 
+**Shared 5Mbps FD CAN Buses Before Release 17**
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
-| 64 B | Zero drops at 100% utilization on both buses simultaneously | zero drops at 11.2k |
+| 64 B | Zero drops at 100% utilization on both buses simultaneously | Zero drops at 11.2k |
 | 32 B | 69 % | 11.3k |
 | 16 B | 50 % | 11.0k |
 | 8 B  | 43 % | 11.7k |
 
-**Shared Buses After Release 17**
+**Shared 5Mbps FD CAN Buses After Release 17**
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
-| 64 B | Zero drops at 100% utilization on both buses simultaneously | zero drops at 11.2k |
-| 32 B | Zero drops at 100% utilization on both buses simultaneously| zero drops at 17.1k |
+| 64 B | Zero drops at 100% utilization on both buses simultaneously | Zero drops at 11.2k |
+| 32 B | Zero drops at 100% utilization on both buses simultaneously | Zero drops at 17.1k |
 | 16 B | 80 % | 17.7k |
 | 8 B  | 65 % | 17.7k |
 
 The drop-free ceiling has risen from ~11k to ~17.7k combined frames per second.
+
+Testing a single bus, can_s2, at 5Mbps FD:
+
+**Single 5Mbps FD CAN Bus Before Release 17**
+
+| FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Frames-Per-Second When First Dropped Frame Occurs |
+|---|---|---|
+| 64 B | Zero drops at 100% utilization | Zero drops at 5.6k |
+| 32 B | Zero drops at 100% utilization | Zero drops at 8.6k |
+| 16 B | Zero drops at 100% utilization | Zero drops at 11.8k |
+| 8 B  | 73 % | 9.9k |
+
+**Single 5Mbps FD CAN Bus After Release 17**
+
+| FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Frames-Per-Second When First Dropped Frame Occurs |
+|---|---|---|
+| 64 B | Zero drops at 100% utilization | Zero drops at 5.6k |
+| 32 B | Zero drops at 100% utilization | Zero drops at 8.6k |
+| 16 B | Zero drops at 100% utilization | Zero drops at 11.8k |
+| 8 B  | Zero drops at 100% utilization | Zero drops at 14.3k |
+
+Single Buses are now drop-free no matter the frame size
+
+In practice, FD-Buses are unlikely to utilize smaller frame sizes.
 
 * Fix "Hz" column in CAN Bus Monitor to properly handle coalesced frames
 
