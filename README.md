@@ -23,7 +23,30 @@ Updates in release 17 are largely based on SoCal Showdown experiences:
 * (Initial plumbing to disable WiFi when connected to FMS. Full functionality to be enabled in release 18. WiFi restores on boot if not disabled in UI.)
 
 ### CAN Bus
-* Increase drop-less CAN FPS per SPI Bus by at least 30%
+* Increase drop-free CAN FPS per SPI Bus by at least 30%. FPS/SPI Bus is now 17k frames. 
+
+Testing the shared can_s3 + can_s4 at 5Mbps FD:
+
+**Shared CAN Buses Before Release 17** 
+
+| FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
+|---|---|---|
+| 64 B | zero drops at 100 % | zero drops at 11.2k |
+| 32 B | 69 % | 11.3k |
+| 16 B | 50 % | 11.0k |
+| 8 B  | 43 % | 11.7k |
+
+**Shared Buses After Release 17**
+
+| FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
+|---|---|---|
+| 64 B | zero drops at 100 % | zero drops at 11.2k|
+| 32 B | zero drops at 100 % | zero drops at 17.1k |
+| 16 B | 80 % | 17.7k |
+| 8 B  | 65 % | 17.7k |
+
+The drop-free ceiling has risen from ~11k to ~17.7k combined frames per second.
+
 * Fix "Hz" column in CAN Bus Monitor to properly handle coalesced frames
 
 ### Kernel
