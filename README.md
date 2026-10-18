@@ -31,7 +31,7 @@ Testing the shared can_s3 + can_s4 at 5Mbps FD:
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
-| 64 B | zero drops at 100 % | zero drops at 11.2k |
+| 64 B | zero drops at 100% Utilization on Both Buses Simultaneously | zero drops at 11.2k |
 | 32 B | 69 % | 11.3k |
 | 16 B | 50 % | 11.0k |
 | 8 B  | 43 % | 11.7k |
@@ -40,8 +40,8 @@ Testing the shared can_s3 + can_s4 at 5Mbps FD:
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Combined Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
-| 64 B | zero drops at 100 % | zero drops at 11.2k|
-| 32 B | zero drops at 100 % | zero drops at 17.1k |
+| 64 B | zero drops at 100% Utilization on Both Buses Simultaneously | zero drops at 11.2k |
+| 32 B | zero drops at 100% Utilization on Both Buses Simultaneously | zero drops at 17.1k |
 | 16 B | 80 % | 17.7k |
 | 8 B  | 65 % | 17.7k |
 
