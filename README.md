@@ -49,7 +49,7 @@ The drop-free ceiling has risen from ~11k to ~17.7k combined frames per second.
 
 Testing a single bus, can_s2, at 5Mbps FD:
 
-**Single 5Mbps FD CAN Bus Before Release 17**
+**Individual 5Mbps FD CAN Bus Before Release 17**
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
@@ -58,7 +58,7 @@ Testing a single bus, can_s2, at 5Mbps FD:
 | 16 B | Zero drops at 100% utilization | Zero drops at 11.8k |
 | 8 B  | 73% | 9.9k |
 
-**Single 5Mbps FD CAN Bus After Release 17**
+**Individual 5Mbps FD CAN Bus After Release 17**
 
 | FD Frame Data-Field Size | CAN Bus Utilization When First Dropped Frame Occurs | Frames-Per-Second When First Dropped Frame Occurs |
 |---|---|---|
