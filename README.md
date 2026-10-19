@@ -6,9 +6,7 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR THE WEB-BASED 
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
-## [Alpha 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha17-403) and [Beta 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta17-233) (Canivore support pending)
-
-Canivore is not yet supported in release 17
+## [Alpha 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha17-403) and [Beta 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta17-233)
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
 
@@ -104,8 +102,6 @@ rtsubsystem watchdog reset triggered by host reboot during a transaction could p
 Fix white-text-on-white-background banners 
 Blocks 0.6 to 0.8
 Add uptime and reboot count to the System Snapshot Connectivity Card.
-
-Canivore is not yet supported in release 17
 
 ## [Alpha 16](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha16-391) and [Beta 16 ](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta16-221)
 
