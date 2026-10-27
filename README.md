@@ -6,6 +6,43 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR THE WEB-BASED 
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
+## ALPHA 18 and BETA 18 (In progress)
+
+### Support Bundle
+* Opt-in robot log inclusion
+![supportbundlerobotlogs](https://ik.imagekit.io/llimi/controlsystem/sblogs)
+* Ghost-CSA updated with upload progress bar and acceptance of included robot logs and robot code
+
+### CAN Bus
+* Vendors can use the new configuratoin API instead of handwritten snippets to configure Systemcore CAN Buses
+* MRCLib API wrapper coming soon
+* Heartbeat timing improved
+* When a bus is configured with FD capability, the heartbeat on that bus is upgraded to a 64 Byte frame with BRS
+* Datetime removed from heartbeat
+* A Bus's own transmitted frames no longer implement the bus's RX statistics
+* CAN Bus UI reports admin-down vs fault-down
+* CAN Bus UI reports can bus owner if one has been assigned
+![admindown](https://ik.imagekit.io/llimi/controlsystem/admindown?updatedAt=1793142196316)
+
+### USB
+* Systemcore no longer mounts EFI system partitions (GPT type GUID and MBR 0xef).
+
+### Wi-Fi
+* PASSWORD and password rejected as possible passphrases.
+* Wi-Fi is now disabled when Systemcore detects an FMS, completing the plumbing from release 17
+
+### Package Installation
+* Package installation is more memory-efficient
+* Robot program is stopped during package installation and restarted on success/failure.
+
+### OTA Updates
+* Fix rare halt on first boot after OTA update
+
+### Other
+* Update Blocks to 0.8.1
+* Update WPILib, Related software to latest
+* The connectivity card now shows the clock source as NTP, RTC or "not set"
+
 ## [Alpha 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha17-403) and [Beta 17](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta17-233)
 
 Updates in release 17 are largely based on SoCal Showdown experiences:
