@@ -1,6 +1,8 @@
 Access to the latest Systemcore OS builds and cross-compilation resources.
 Releases are automatically published and may contain bugs.
 
+By downloading Limelight Software, you agree to the EULA at https://docs.limelightvision.io/eula
+
 NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR THE WEB-BASED OTA PROCESS (See SystemcoreTesting Repo)
 
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
