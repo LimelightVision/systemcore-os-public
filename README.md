@@ -29,7 +29,6 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR THE WEB-BASED 
 
 ### Wi-Fi
 * PASSWORD and password rejected as possible passphrases.
-* Wi-Fi is now disabled when Systemcore detects an FMS, completing the plumbing from release 17
 
 ### Package Installation
 * Package installation is more memory-efficient
