@@ -8,6 +8,17 @@ NEW IMAGES MUST BE FLASHED WITH HARDWARE MANAGER VERSION 2.0.7 OR THE WEB-BASED 
 * Beta builds are for Beta Hardware. Beta Hardware units have configuration buttons.
 * Alpha builds are for the original Alpha Hardware.
 
+## ALPHA 19 & BETA 19
+
+### USB 3 Camera Support
+* Support and default calibration for USB3.0 Thrifty Cam
+* Add USB Link speed check. ThriftyCam exposes YUYV (USB 3 only) and MJPEG Modes.
+
+### CAN Bus
+
+* Change "Admin Down" to "Configuring" in CAN Bus card
+* 
+
 ## [ALPHA 18](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-alpha18-422) and [BETA 18](https://github.com/LimelightVision/systemcore-os-public/releases/tag/limelightosr-2027.0.0-beta18-252)
 
 ### Support Bundle
